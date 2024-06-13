@@ -1,0 +1,23 @@
+[gd_scene load_steps=4 format=3 uid="uid://c2roo38tuhiqe"]
+
+[ext_resource type="Script" path="res://Script/puddle.gd" id="1_x5ybk"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_esw3q"]
+
+[sub_resource type="BoxMesh" id="BoxMesh_5p7bx"]
+
+[node name="Puddle" type="Node3D" groups=["Puddle"]]
+script = ExtResource("1_x5ybk")
+
+[node name="Area3D" type="Area3D" parent="."]
+transform = Transform3D(1.23906, 0, 0, 0, 0.154375, 0, 0, 0, 1.25446, 0, 0, 0)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Area3D"]
+shape = SubResource("BoxShape3D_esw3q")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Area3D/CollisionShape3D"]
+mesh = SubResource("BoxMesh_5p7bx")
+skeleton = NodePath("../..")
+
+[connection signal="body_entered" from="Area3D" to="." method="_on_area_3d_body_entered"]
+[connection signal="body_exited" from="Area3D" to="." method="_on_area_3d_body_exited"]

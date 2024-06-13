@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://ddr5aujdd2q5a"]
+
+[ext_resource type="Script" path="res://Script/linwood.gd" id="1_xmuco"]
+
+[node name="Linwood" type="CharacterBody3D"]
+script = ExtResource("1_xmuco")
