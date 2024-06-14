@@ -40,7 +40,10 @@ func _ready():
 	currentState = States.patrol
 	navAgent.set_target_position(waypoints[0].global_position)
 	player = get_tree().get_nodes_in_group("Player")[0]
-
+	Wwise.register_game_obj(self, self.name)
+	Wwise.register_listener(self)
+	Wwise.load_bank_id(AK.BANKS.INIT)
+	Wwise.load_bank_id(AK.BANKS.MAIN)
 
 func _physics_process(delta):
 	if not is_on_floor():
@@ -196,4 +199,5 @@ func _on_attack_t_imer_timeout():
 func _on_timer_timeout():
 	if attack == true:
 		player.health = player.health - 3
+		Wwise.post_event_id(AK.EVENTS.DAMAGE, self)
 		chasespeed = 5

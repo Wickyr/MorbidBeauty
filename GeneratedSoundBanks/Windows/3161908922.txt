@@ -1,0 +1,23 @@
+Event	ID	Name			Wwise Object Path	Notes
+	340271938	Walking			\Default Work Unit\Player\Walking	
+	779278001	Death			\Default Work Unit\Player\Death	
+	1166633136	Stomp			\Default Work Unit\Player\Stomp	
+	1786804762	Damage			\Default Work Unit\Player\Damage	
+	1874288895	Idle			\Default Work Unit\Player\Idle	
+
+Effect plug-ins	ID	Name	Type				Notes
+	3043085106	High_Impact	Wwise Compressor			
+	3701691487	Hall_Large_Bright	Wwise RoomVerb			
+
+In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	99596555	FS3	C:\Users\jlutt\Documents\WwiseProjects\MorbidBeauty\.cache\Windows\SFX\FS3_2F47192F.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\Footsteps\FS3		53088
+	148068930	Pain2	C:\Users\jlutt\Documents\WwiseProjects\MorbidBeauty\.cache\Windows\SFX\Pain3_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\Pain\Pain2		129072
+	225894658	Pain1	C:\Users\jlutt\Documents\WwiseProjects\MorbidBeauty\.cache\Windows\SFX\Pain2_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\Pain\Pain1		48692
+	497860259	FS2	C:\Users\jlutt\Documents\WwiseProjects\MorbidBeauty\.cache\Windows\SFX\FS2_820BC841.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\Footsteps\FS2		51616
+	579301522	Death	C:\Users\jlutt\Documents\WwiseProjects\MorbidBeauty\.cache\Windows\SFX\DeathSound_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\Death		1984660
+	720736340	FS4	C:\Users\jlutt\Documents\WwiseProjects\MorbidBeauty\.cache\Windows\SFX\FS4_B1028135.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\Footsteps\FS4		53088
+	799628173	Pain3	C:\Users\jlutt\Documents\WwiseProjects\MorbidBeauty\.cache\Windows\SFX\Pain4_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\Pain\Pain3		112252
+	939133334	Stomp	C:\Users\jlutt\Documents\WwiseProjects\MorbidBeauty\.cache\Windows\SFX\Stomp_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\Stomp		145544
+	992153646	FS1	C:\Users\jlutt\Documents\WwiseProjects\MorbidBeauty\.cache\Windows\SFX\FS1_F6106BC7.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\Footsteps\FS1		53500
+	1026987887	Breathing	C:\Users\jlutt\Documents\WwiseProjects\MorbidBeauty\.cache\Windows\SFX\Breathing_34EA0DA9.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\Breathing		1398624
+
