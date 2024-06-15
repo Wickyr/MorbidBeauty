@@ -3,7 +3,8 @@ enum States{
 	patrol,
 	chasing,
 	hunting,
-	waiting
+	waiting,
+	attack
 }
 
 var currentState : States
@@ -21,9 +22,14 @@ var PlayerEarShotFar : bool
 var PlayerEarShotClose : bool
 var PlayerSightFar : bool
 var PlayerSightClose : bool
-@export var puddle = get_tree().get_nodes_in_group("Puddle")
+var puddle 
 
 var gravity = ProjectSettings.get_setting("physics/3d/default_gravity")
+@onready var anim = $LinWood_1/AnimationPlayer
+@onready var fleshman_4 = $Fleshman_4
+@onready var stop = $Stop
+
+
 
 
 # Called when the node enters the scene tree for the first time.
@@ -32,6 +38,7 @@ func _ready():
 	currentState = States.patrol
 	navAgent.set_target_position(waypoints[0].global_position)
 	player = get_tree().get_nodes_in_group("Player")[0]
+	puddle = get_tree().get_nodes_in_group("Puddle")
 
 
 func _physics_process(delta):
@@ -44,22 +51,31 @@ func _process(delta):
 			if(navAgent.is_navigation_finished()):
 				currentState = States.waiting
 				patrol_timer.start()
+				anim.play("Idle")
 				return
 			MoveTowardPoint(delta, patrolspeed)
+			anim.play("Walk")
 			pass
 		States.chasing:
 			if(navAgent.is_navigation_finished()):
 				patrol_timer.start()
 				currentState = States.waiting
+				anim.play("Idle")
 			navAgent.set_target_position(player.global_position)
 			MoveTowardPoint(delta, chasespeed)
+			anim.play("Run")
 			pass
 		States.hunting:
 			if(navAgent.is_navigation_finished()):
 				patrol_timer.start()
 				currentState = States.waiting
+				anim.play("Idle")
 			MoveTowardPoint(delta, patrolspeed)
+			anim.play("Walk")
 			pass
+		States.attack:
+			anim.play("Grab")
+			fleshman_4.visible = true
 		States.waiting:
 			pass
 
@@ -121,8 +137,11 @@ func _on_attack_area_body_entered(body):
 	if body.is_in_group("Player"):
 		attack = true
 		player.health = 0
+		anim.play("Grab")
 		chasespeed = 0
 		print("enemy attack")
+		player.visible = false
+		currentState = States.attack
 
 
 
@@ -133,12 +152,16 @@ func _on_attack_area_body_exited(body):
 
 
 func _on_long_hearing_body_entered(body):
-	if puddle.noisy == true:
-		navAgent.set_target_position(puddle.global_position)
-	if(navAgent.is_navigation_finished()):
-		patrol_timer.start()
-		currentState = States.waiting
+	if body.is_in_group("Player"):
+		if player.noisy == true:
+			navAgent.set_target_position(player.position)
+		if(navAgent.is_navigation_finished()):
+			patrol_timer.start()
+			currentState = States.waiting
 
 
 func _on_long_hearing_body_exited(body):
 	pass # Replace with function body.
+
+
+
