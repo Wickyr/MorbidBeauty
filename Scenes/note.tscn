@@ -1,0 +1,28 @@
+[gd_scene load_steps=4 format=3 uid="uid://cuolso5nqjsml"]
+
+[ext_resource type="Script" path="res://Script/Note.gd" id="1_3865g"]
+[ext_resource type="Texture2D" uid="uid://bq5nmmq8lfriv" path="res://icon.svg" id="2_jmfeo"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_1dt5f"]
+
+[node name="Note" type="Node3D"]
+
+[node name="Area3D" type="Area3D" parent="."]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Area3D"]
+transform = Transform3D(2.58297, 0, 0, 0, 2.58297, 0, 0, 0, 2.58297, 0, 0, 0)
+shape = SubResource("BoxShape3D_1dt5f")
+
+[node name="CSGBox3D" type="CSGBox3D" parent="."]
+use_collision = true
+script = ExtResource("1_3865g")
+
+[node name="Notes" type="CanvasLayer" parent="."]
+
+[node name="Sprite2D" type="Sprite2D" parent="Notes"]
+visible = false
+position = Vector2(575, 289)
+scale = Vector2(3.42969, 3.32813)
+texture = ExtResource("2_jmfeo")
+
+[connection signal="body_exited" from="Area3D" to="CSGBox3D" method="_on_area_3d_body_exited"]

@@ -195,5 +195,5 @@ func _on_attack_t_imer_timeout():
 
 func _on_timer_timeout():
 	if attack == true:
-		player.health = player.health - 3
+		player.health = player.health - 5
 		chasespeed = 5

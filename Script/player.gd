@@ -5,9 +5,9 @@ extends CharacterBody3D
 @export var walkingspeed = 5.0
 @export var crouchspeed = 3.0
 @export var health = 30
+@export var fullhealth = 30
 @onready var stand = $Stand
 var crouched : bool
-var noisy : bool
 var rotate = .05
 var direction = Vector3.ZERO
 @onready var gameover = $"../Gameover"
@@ -17,12 +17,19 @@ var attacking = false
 @onready var dead = false
 @export var Spawn = preload("res://Scenes/rat_splatter.tscn")
 @onready var foot = $Foot
-
-
+@onready var heal_timer = $HealTimer
+@export var noisy : bool
 
 
 # Get the gravity from the project settings to be synced with RigidBody nodes.
 var gravity = ProjectSettings.get_setting("physics/3d/default_gravity")
+
+func _process(delta):
+	if health < fullhealth && dead == false:
+		heal_timer.start()
+		print("hurt")
+	if noisy == true:
+		print("noisy")
 
 func _physics_process(delta):
 	if not is_on_floor():
@@ -30,6 +37,7 @@ func _physics_process(delta):
 	
 	var input_dir = Input.get_vector("PlaceHolder1", "PlaceHolder2", "w", "s")
 	var direction = (transform.basis * Vector3(input_dir.x, 0, input_dir.y)).normalized()
+	
 	
 	if health <= 0:
 		print("Dead")
@@ -84,7 +92,7 @@ func _physics_process(delta):
 
 func _on_attack_area_body_entered(body):
 	if attacking == true:
-		if body.is_in_group("Rat"):
+		if "Rat" in body.name:
 			body.queue_free()
 			var Splatter = Spawn.instantiate()
 			add_sibling(Splatter)
@@ -95,5 +103,7 @@ func _on_timer_timeout():
 	SPEED = 3
 	print("attack stop")
 	anim.play("Action")
-	
 
+func _on_heal_timer_timeout():
+	health = fullhealth
+	print("Healed")
