@@ -28,6 +28,7 @@ var gravity = ProjectSettings.get_setting("physics/3d/default_gravity")
 @onready var anim = $LinWood_1/AnimationPlayer
 @onready var fleshman_4 = $Fleshman_4
 @onready var stop = $Stop
+@onready var grabcam = $Grabcam
 
 
 
@@ -76,6 +77,7 @@ func _process(delta):
 		States.attack:
 			anim.play("Grab")
 			fleshman_4.visible = true
+			grabcam.current = true
 		States.waiting:
 			pass
 

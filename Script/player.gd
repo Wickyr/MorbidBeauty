@@ -41,7 +41,9 @@ func _physics_process(delta):
 	if health <= 0 and not dead:
 		print("Dead")
 		dead = true
-		velocity = Vector3.ZERO  # Stop all movement
+		velocity.x = 0
+		velocity.z = 0
+		SPEED = 0  # Stop all movement
 		anim.play("Death")  # Play death animation
 		gameover.visible = true
 		if not deathSoundPlayed:
