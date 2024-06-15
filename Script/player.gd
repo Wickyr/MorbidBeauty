@@ -27,9 +27,6 @@ var footstepTimer = 0.0
 
 func _ready():
 	Wwise.register_game_obj(self, self.name)
-	Wwise.register_listener(self)
-	Wwise.load_bank_id(AK.BANKS.INIT)
-	Wwise.load_bank_id(AK.BANKS.MAIN)
 	
 func _physics_process(delta):
 	if not is_on_floor():

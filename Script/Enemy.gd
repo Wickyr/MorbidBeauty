@@ -40,9 +40,6 @@ func _ready():
 	navAgent.set_target_position(waypoints[0].global_position)
 	player = get_tree().get_nodes_in_group("Player")[0]
 	Wwise.register_game_obj(self, self.name)
-	Wwise.register_listener(self)
-	Wwise.load_bank_id(AK.BANKS.INIT)
-	Wwise.load_bank_id(AK.BANKS.MAIN)
 
 func _physics_process(delta):
 	if not is_on_floor():

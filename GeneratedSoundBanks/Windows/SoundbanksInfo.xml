@@ -162,13 +162,17 @@
 				</AcousticTexture>
 			</AcousticTextures>
 		</SoundBank>
-		<SoundBank Id="3161908922" Type="User" Language="SFX" Hash="{310D7F2A-0A67-2462-D985-5AD62A4BBA11}">
+		<SoundBank Id="3161908922" Type="User" Language="SFX" Hash="{7F87A193-349B-62A8-3384-D860BA0D7F3F}">
 			<ShortName>Main</ShortName>
 			<Path>3161908922.bnk</Path>
 			<Media>
+				<File Id="40301477" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Rat1.wav</ShortName>
+					<CachePath>SFX/Rat1_818F3B66.wem</CachePath>
+				</File>
 				<File Id="85423154" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>RatWalk.wav</ShortName>
-					<CachePath>SFX/RatWalk_BFD06E58.wem</CachePath>
+					<CachePath>SFX/RatWalk_0027BBBF.wem</CachePath>
 				</File>
 				<File Id="99596555" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>FS3.wav</ShortName>
@@ -180,7 +184,11 @@
 				</File>
 				<File Id="209224562" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>RatWalk.wav</ShortName>
-					<CachePath>SFX/RatWalk_112713AC.wem</CachePath>
+					<CachePath>SFX/RatWalk_059A9573.wem</CachePath>
+				</File>
+				<File Id="220336238" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Rat2.wav</ShortName>
+					<CachePath>SFX/Rat2_818F3B66.wem</CachePath>
 				</File>
 				<File Id="225894658" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Pain2.wav</ShortName>
@@ -188,7 +196,7 @@
 				</File>
 				<File Id="237375162" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>RatWalk.wav</ShortName>
-					<CachePath>SFX/RatWalk_7E28CCAF.wem</CachePath>
+					<CachePath>SFX/RatWalk_3F96EDB6.wem</CachePath>
 				</File>
 				<File Id="240030660" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>LinwoodWalk3.wav</ShortName>
@@ -204,15 +212,15 @@
 				</File>
 				<File Id="329823285" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Whale.wav</ShortName>
-					<CachePath>SFX/Whale_1C48B789.wem</CachePath>
+					<CachePath>SFX/Whale_03D88D39.wem</CachePath>
+				</File>
+				<File Id="378869427" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Rat34.wav</ShortName>
+					<CachePath>SFX/Rat34_818F3B66.wem</CachePath>
 				</File>
 				<File Id="432474786" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Drag.wav</ShortName>
 					<CachePath>SFX/Drag_818F3B66.wem</CachePath>
-				</File>
-				<File Id="457529427" Language="SFX" Streaming="false" Location="Memory">
-					<ShortName>Bite.wav</ShortName>
-					<CachePath>SFX/Bite_8BC99685.wem</CachePath>
 				</File>
 				<File Id="497860259" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>FS2.wav</ShortName>
@@ -224,7 +232,7 @@
 				</File>
 				<File Id="653906428" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>GeneralAmbience.wav</ShortName>
-					<CachePath>SFX/GeneralAmbience_C2352FBE.wem</CachePath>
+					<CachePath>SFX/GeneralAmbience_50BC6CB7.wem</CachePath>
 				</File>
 				<File Id="682298366" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Squeak1.wav</ShortName>
@@ -236,7 +244,7 @@
 				</File>
 				<File Id="780068149" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>RatWalk.wav</ShortName>
-					<CachePath>SFX/RatWalk_260D68A3.wem</CachePath>
+					<CachePath>SFX/RatWalk_E91227F2.wem</CachePath>
 				</File>
 				<File Id="798476568" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Squeak2.wav</ShortName>
@@ -261,6 +269,10 @@
 				<File Id="925896026" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>LinwoodWalk2.wav</ShortName>
 					<CachePath>SFX/LinwoodWalk2_818F3B66.wem</CachePath>
+				</File>
+				<File Id="926262678" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Rat4.wav</ShortName>
+					<CachePath>SFX/Rat4_818F3B66.wem</CachePath>
 				</File>
 				<File Id="939133334" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Stomp.wav</ShortName>
@@ -300,7 +312,9 @@
 				</Event>
 				<Event Id="1645043423" Name="Bite">
 					<MediaRefs>
-						<MediaRef Id="457529427"/>
+						<MediaRef Id="40301477"/>
+						<MediaRef Id="220336238"/>
+						<MediaRef Id="378869427"/>
 					</MediaRefs>
 				</Event>
 				<Event Id="417490929" Name="Chase">
@@ -334,12 +348,8 @@
 				<Event Id="3924734864" Name="RatDeath">
 					<MediaRefs>
 						<MediaRef Id="636040739"/>
+						<MediaRef Id="926262678"/>
 					</MediaRefs>
-					<PluginRefs>
-						<ShareSets>
-							<PluginRef Id="3701691487"/>
-						</ShareSets>
-					</PluginRefs>
 				</Event>
 				<Event Id="1690196772" Name="RatSqueak">
 					<MediaRefs>
@@ -402,5 +412,5 @@
 			</Events>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{ADD46AE1-B9FC-DDC3-F8CF-4CD80DC1712D}</FileHash>
+	<FileHash>{A0308D4C-CB53-46A9-8F60-7E8C6FD843D2}</FileHash>
 </SoundBanksInfo>
