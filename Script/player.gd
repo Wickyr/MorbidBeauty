@@ -20,7 +20,6 @@ var dead = false
 # Get the gravity from the project settings to be synced with RigidBody nodes.
 var gravity = ProjectSettings.get_setting("physics/3d/default_gravity")
 var deathSoundPlayed = false
-
 # Footstep sound cooldown variables
 var footstepCooldown = 0.6  # Adjust as needed, in seconds
 var footstepTimer = 0.0

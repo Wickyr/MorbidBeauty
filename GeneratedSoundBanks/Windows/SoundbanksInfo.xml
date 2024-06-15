@@ -9,7 +9,7 @@
 	</RootPaths>
 	<DialogueEvents/>
 	<SoundBanks>
-		<SoundBank Id="1355168291" Type="User" Language="SFX" Hash="{68220481-007F-714E-A3C5-92C379B66927}">
+		<SoundBank Id="1355168291" Type="User" Language="SFX" Hash="{016D3D9F-1DF4-9E68-9239-99A5D541F20F}">
 			<ShortName>Init</ShortName>
 			<Path>1355168291.bnk</Path>
 			<Plugins>
@@ -162,7 +162,7 @@
 				</AcousticTexture>
 			</AcousticTextures>
 		</SoundBank>
-		<SoundBank Id="3161908922" Type="User" Language="SFX" Hash="{7F87A193-349B-62A8-3384-D860BA0D7F3F}">
+		<SoundBank Id="3161908922" Type="User" Language="SFX" Hash="{285E5D3B-3EEB-8DAB-2875-77400A7AEBCD}">
 			<ShortName>Main</ShortName>
 			<Path>3161908922.bnk</Path>
 			<Media>
@@ -220,7 +220,7 @@
 				</File>
 				<File Id="432474786" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Drag.wav</ShortName>
-					<CachePath>SFX/Drag_818F3B66.wem</CachePath>
+					<CachePath>SFX/Drag_B2F6B9DE.wem</CachePath>
 				</File>
 				<File Id="497860259" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>FS2.wav</ShortName>
@@ -286,15 +286,22 @@
 					<ShortName>Breathing.wav</ShortName>
 					<CachePath>SFX/Breathing_4992007D.wem</CachePath>
 				</File>
+				<File Id="1052871034" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Blood.wav</ShortName>
+					<CachePath>SFX/Blood_FBC78EF0.wem</CachePath>
+				</File>
 				<File Id="1063358398" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>CHASE.wav</ShortName>
 					<CachePath>SFX/CHASE_11A93380.wem</CachePath>
 				</File>
 			</Media>
 			<Plugins>
+				<Custom>
+					<Plugin Id="759195188" Name="Silence" LibName="Wwise Silence" LibId="6619138"/>
+				</Custom>
 				<ShareSets>
+					<Plugin Id="602546716" Name="Room_Large" LibName="Wwise RoomVerb" LibId="7733251"/>
 					<Plugin Id="1990128658" Name="Room_Medium" LibName="Wwise RoomVerb" LibId="7733251"/>
-					<Plugin Id="3043085106" Name="High_Impact" LibName="Wwise Compressor" LibId="7077891"/>
 					<Plugin Id="3701691487" Name="Hall_Large_Bright" LibName="Wwise RoomVerb" LibId="7733251"/>
 				</ShareSets>
 			</Plugins>
@@ -302,7 +309,13 @@
 				<Event Id="58138747" Name="Active">
 					<MediaRefs>
 						<MediaRef Id="804822220"/>
+						<MediaRef Id="1052871034"/>
 					</MediaRefs>
+					<PluginRefs>
+						<ShareSets>
+							<PluginRef Id="602546716"/>
+						</ShareSets>
+					</PluginRefs>
 				</Event>
 				<Event Id="85412153" Name="Ambience">
 					<MediaRefs>
@@ -316,6 +329,11 @@
 						<MediaRef Id="220336238"/>
 						<MediaRef Id="378869427"/>
 					</MediaRefs>
+					<PluginRefs>
+						<Custom>
+							<PluginRef Id="759195188"/>
+						</Custom>
+					</PluginRefs>
 				</Event>
 				<Event Id="417490929" Name="Chase">
 					<MediaRefs>
@@ -328,12 +346,6 @@
 						<MediaRef Id="225894658"/>
 						<MediaRef Id="799628173"/>
 					</MediaRefs>
-					<PluginRefs>
-						<ShareSets>
-							<PluginRef Id="3043085106"/>
-							<PluginRef Id="3701691487"/>
-						</ShareSets>
-					</PluginRefs>
 				</Event>
 				<Event Id="1874288895" Name="Idle">
 					<MediaRefs>
@@ -370,11 +382,6 @@
 					<MediaRefs>
 						<MediaRef Id="939133334"/>
 					</MediaRefs>
-					<PluginRefs>
-						<ShareSets>
-							<PluginRef Id="3043085106"/>
-						</ShareSets>
-					</PluginRefs>
 				</Event>
 				<Event Id="3170124113" Name="Voice">
 					<MediaRefs>
@@ -412,5 +419,5 @@
 			</Events>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{A0308D4C-CB53-46A9-8F60-7E8C6FD843D2}</FileHash>
+	<FileHash>{E1B4A792-5F52-EB47-CDBD-82B71AAD78A1}</FileHash>
 </SoundBanksInfo>
