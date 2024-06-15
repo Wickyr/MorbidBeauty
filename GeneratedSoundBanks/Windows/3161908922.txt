@@ -35,7 +35,7 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	329411520	LinwoodWalk4	C:\Users\jlutt\Documents\WwiseProjects\MorbidBeauty\.cache\Windows\SFX\LinwoodWalk4_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\Linwood\Footsteps\LinwoodWalk4		127500
 	329823285	Moan	C:\Users\jlutt\Documents\WwiseProjects\MorbidBeauty\.cache\Windows\SFX\Whale_03D88D39.wem		\Actor-Mixer Hierarchy\Default Work Unit\Linwood\Moan\Moan		1027536
 	378869427	Rat3	C:\Users\jlutt\Documents\WwiseProjects\MorbidBeauty\.cache\Windows\SFX\Rat34_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\Rat\Bites\Rat3		84008
-	432474786	Drag	C:\Users\jlutt\Documents\WwiseProjects\MorbidBeauty\.cache\Windows\SFX\Drag_B2F6B9DE.wem		\Actor-Mixer Hierarchy\Default Work Unit\Linwood\Drag		226096
+	432474786	Drag	C:\Users\jlutt\Documents\WwiseProjects\MorbidBeauty\.cache\Windows\SFX\Drag_FD86A6DC.wem		\Actor-Mixer Hierarchy\Default Work Unit\Linwood\Drag		226096
 	497860259	FS2	C:\Users\jlutt\Documents\WwiseProjects\MorbidBeauty\.cache\Windows\SFX\FS2_90E88873.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\Footsteps\FS2		50116
 	636040739	Splat	C:\Users\jlutt\Documents\WwiseProjects\MorbidBeauty\.cache\Windows\SFX\Splat_97A4DAE6.wem		\Actor-Mixer Hierarchy\Default Work Unit\Rat\Splat		55348
 	653906428	Ambience1	C:\Users\jlutt\Documents\WwiseProjects\MorbidBeauty\.cache\Windows\SFX\GeneralAmbience_50BC6CB7.wem		\Actor-Mixer Hierarchy\Default Work Unit\Environment\Ambience\Ambience1		12394176

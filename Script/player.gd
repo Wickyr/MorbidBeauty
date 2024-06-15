@@ -53,6 +53,7 @@ func _physics_process(delta):
 			velocity.z = direction.z * SPEED
 			anim.play("Walking")
 			if footstepTimer >= footstepCooldown:
+				Wwise.set_3d_position(self, transform)
 				Wwise.post_event_id(AK.EVENTS.WALKING, self)
 				footstepTimer = 0.0  # Reset timer after playing sound
 			else:
@@ -63,6 +64,7 @@ func _physics_process(delta):
 			velocity.z = -direction.z * -SPEED/2
 			anim.play("Walking")
 			if footstepTimer >= footstepCooldown:
+				Wwise.set_3d_position(self, transform)
 				Wwise.post_event_id(AK.EVENTS.WALKING, self)
 				footstepTimer = 0.0  # Reset timer after playing sound
 			else:
@@ -97,6 +99,7 @@ func _physics_process(delta):
 		print("attacked")
 		anim.play("Stomp")
 		anim.speed_scale = 2
+		Wwise.set_3d_position(self, transform)
 		Wwise.post_event_id(AK.EVENTS.STOMP, self)
 
 func _on_attack_area_body_entered(body):

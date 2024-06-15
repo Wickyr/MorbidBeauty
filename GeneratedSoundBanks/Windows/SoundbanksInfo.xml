@@ -162,7 +162,7 @@
 				</AcousticTexture>
 			</AcousticTextures>
 		</SoundBank>
-		<SoundBank Id="3161908922" Type="User" Language="SFX" Hash="{285E5D3B-3EEB-8DAB-2875-77400A7AEBCD}">
+		<SoundBank Id="3161908922" Type="User" Language="SFX" Hash="{03F0CA7F-15C8-636C-44E4-48779C1DD6B1}">
 			<ShortName>Main</ShortName>
 			<Path>3161908922.bnk</Path>
 			<Media>
@@ -220,7 +220,7 @@
 				</File>
 				<File Id="432474786" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Drag.wav</ShortName>
-					<CachePath>SFX/Drag_B2F6B9DE.wem</CachePath>
+					<CachePath>SFX/Drag_FD86A6DC.wem</CachePath>
 				</File>
 				<File Id="497860259" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>FS2.wav</ShortName>
@@ -419,5 +419,5 @@
 			</Events>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{E1B4A792-5F52-EB47-CDBD-82B71AAD78A1}</FileHash>
+	<FileHash>{4FEC7D08-9054-A521-4606-22605BB10B41}</FileHash>
 </SoundBanksInfo>

@@ -33,9 +33,6 @@ var gravity = ProjectSettings.get_setting("physics/3d/default_gravity")
 @onready var stop = $Stop
 @onready var grabcam = $Grabcam
 
-
-
-
 # Called when the node enters the scene tree for the first time.
 func _ready():
 	navAgent = $NavigationAgent3D
@@ -61,6 +58,7 @@ func _process(delta):
 			MoveTowardPoint(delta, patrolspeed)
 			anim.play("Walk")
 			if footstepTimer >= footstepCooldown:
+				Wwise.set_3d_position(self, transform)
 				Wwise.post_event_id(AK.EVENTS.WALK, self)
 				footstepTimer = 0.0  # Reset timer after playing sound
 			else:
@@ -75,6 +73,7 @@ func _process(delta):
 			MoveTowardPoint(delta, chasespeed)
 			anim.play("Run")
 			if footstepTimer >= runFootstepCooldown:
+				Wwise.set_3d_position(self, transform)
 				Wwise.post_event_id(AK.EVENTS.WALK, self)
 				footstepTimer = 0.0  # Reset timer after playing sound
 			else:
@@ -88,6 +87,7 @@ func _process(delta):
 			MoveTowardPoint(delta, patrolspeed)
 			anim.play("Walk")
 			if footstepTimer >= footstepCooldown:
+				Wwise.set_3d_position(self, transform)
 				Wwise.post_event_id(AK.EVENTS.WALK, self)
 				footstepTimer = 0.0  # Reset timer after playing sound
 			else:
