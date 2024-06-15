@@ -45,7 +45,6 @@ func _physics_process(delta):
 		anim.play("Death")  # Play death animation
 		gameover.visible = true
 		if not deathSoundPlayed:
-			Wwise.post_event_id(AK.EVENTS.DEATH, self)
 			deathSoundPlayed = true
 	else:
 		if Input.is_action_pressed("w") and Input.is_action_just_pressed("s"):

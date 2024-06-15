@@ -1329,10 +1329,9 @@ script = ExtResource("4_3s26u")
 transform = Transform3D(1, 0, 0, 0, 0.999999, 0, 0, 0, 0.999999, 0, 0, -12.4738)
 script = ExtResource("5_2eup8")
 
-[node name="Rat" type="CharacterBody3D" parent="." node_paths=PackedStringArray("waypoints") groups=["Rat"]]
+[node name="Rat" type="CharacterBody3D" parent="." groups=["Rat"]]
 transform = Transform3D(0.532172, 0, 0.0068179, 0, 0.532216, 0, -0.0068179, 0, 0.532172, 0, 1.44272, 16.8857)
 script = ExtResource("6_xstkr")
-waypoints = [NodePath("../NavigationRegion3D/Marker3D"), NodePath("../NavigationRegion3D/Marker3D2"), NodePath("../NavigationRegion3D/Marker3D3")]
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Rat"]
 transform = Transform3D(0.962845, 0, 2.79397e-08, 0, 0.384235, 0, -4.65661e-09, 0, 1.62754, 0, -0.077965, 0)

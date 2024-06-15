@@ -1,4 +1,4 @@
-[gd_scene load_steps=99 format=3 uid="uid://bkm2ck7caxv1d"]
+[gd_scene load_steps=99 format=3 uid="uid://bgh1lddleurvo"]
 
 [ext_resource type="Script" path="res://Script/Cam1Trigger.gd" id="1_7t4qv"]
 [ext_resource type="Script" path="res://Script/Cam2Trigger.gd" id="1_bsdho"]
@@ -7,7 +7,6 @@
 [ext_resource type="Script" path="res://Script/Cam1Trigger2.gd" id="4_r2lmd"]
 [ext_resource type="Script" path="res://Script/Enemy.gd" id="4_ttwrt"]
 [ext_resource type="Script" path="res://Script/Cam3Trigger.gd" id="5_jjx1m"]
-[ext_resource type="AudioStream" uid="uid://ddkkoxfdfsux3" path="res://Audio/Music/GeneralAmbience.wav" id="6_qax03"]
 [ext_resource type="Texture2D" uid="uid://nbtwerapqb24" path="res://Graphics/Rat/Rat_1_ratUV.png" id="7_2n45d"]
 [ext_resource type="Shader" path="res://Shaders/PS1.gdshader" id="7_glaxy"]
 [ext_resource type="Texture2D" uid="uid://bq5nmmq8lfriv" path="res://icon.svg" id="7_rsfex"]
@@ -17,6 +16,7 @@
 [ext_resource type="Texture2D" uid="uid://wo40c6kvt48i" path="res://Wall1.png" id="15_4oh8g"]
 [ext_resource type="Texture2D" uid="uid://c8uafxtbmgsq5" path="res://Floor.png" id="15_447sl"]
 [ext_resource type="Texture2D" uid="uid://b7n8nibm0vmi5" path="res://Floor2.png" id="16_vggki"]
+[ext_resource type="Script" path="res://Script/Ambience.gd" id="17_ognrj"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_1gqq0"]
 sky_horizon_color = Color(0.64625, 0.65575, 0.67075, 1)
@@ -1346,6 +1346,10 @@ albedo_texture_force_srgb = true
 uv1_scale = Vector3(1, 7.575, 1)
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_arefy"]
+albedo_color = Color(0.868888, 0.910905, 1, 1)
+albedo_texture = ExtResource("15_4oh8g")
+albedo_texture_force_srgb = true
+uv1_scale = Vector3(1, 3.14, 1)
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_beikt"]
 albedo_color = Color(0.598589, 0.697177, 1, 1)
@@ -2100,10 +2104,6 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.400598, 0)
 [node name="Door" parent="NavigationRegion3D" instance=ExtResource("8_hidgm")]
 transform = Transform3D(1.12301, 0, 0, 0, 1.12301, 0, 0, 0, 0.748671, -1.88428, 1.0483, -5.82951)
 
-[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
-stream = ExtResource("6_qax03")
-autoplay = true
-
 [node name="Gameover" type="CanvasLayer" parent="."]
 visible = false
 
@@ -2255,7 +2255,6 @@ material = SubResource("StandardMaterial3D_vwjrt")
 [node name="CSGBox3D16" type="CSGBox3D" parent="Greyboxing/Room1"]
 transform = Transform3D(-0.796657, 0, 0.604432, 0, 1, 0, -0.604432, 0, -0.796657, -5.85848, 4.72738, 3.58355)
 size = Vector3(6.98109, 18, 0.5)
-material = SubResource("StandardMaterial3D_beikt")
 
 [node name="CSGBox3D17" type="CSGBox3D" parent="Greyboxing/Room1"]
 transform = Transform3D(-0.805825, 0, -0.592154, 0, 1, 0, 0.592154, 0, -0.805825, 5.39546, 4.72738, 3.78115)
@@ -3173,6 +3172,9 @@ material = SubResource("StandardMaterial3D_67waq")
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -70.9069, 0.618548, 70.1204)
 size = Vector3(10, 4.50977, 0.451294)
 material = SubResource("StandardMaterial3D_67waq")
+
+[node name="Ambience" type="Node3D" parent="."]
+script = ExtResource("17_ognrj")
 
 [connection signal="body_entered" from="CamTriggers/Cam1Trigger" to="CamTriggers/Cam1Trigger" method="_on_body_entered"]
 [connection signal="body_entered" from="CamTriggers/Cam2Trigger" to="CamTriggers/Cam2Trigger" method="_on_body_entered"]

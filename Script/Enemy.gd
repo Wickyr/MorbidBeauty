@@ -192,6 +192,7 @@ func _on_attack_area_body_exited(body):
 func _on_attack_t_imer_timeout():
 	timer.start()
 	anim.play("Attack")
+	Wwise.post_event_id(AK.EVENTS.BITE, self)
 	anim.speed_scale = 1
 			
 func _on_timer_timeout():
