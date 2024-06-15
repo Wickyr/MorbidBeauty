@@ -1,13 +1,11 @@
-[gd_scene load_steps=18 format=3 uid="uid://c7ir62xhq36u"]
+[gd_scene load_steps=20 format=3 uid="uid://c7ir62xhq36u"]
 
 [ext_resource type="Script" path="res://Script/player.gd" id="1_3a2sk"]
 [ext_resource type="Script" path="res://Script/IteractCheck.gd" id="2_svqsm"]
 [ext_resource type="Shader" path="res://Shaders/PS1.gdshader" id="3_5bjr8"]
 [ext_resource type="Texture2D" uid="uid://drklnar0bpmi4" path="res://Graphics/Player/Fleshman_3_playerUV3.png" id="3_oxsma"]
-
-[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_ot5ne"]
-radius = 0.652334
-height = 3.06815
+[ext_resource type="Script" path="res://Script/Pause Menu.gd" id="5_c5ekq"]
+[ext_resource type="Texture2D" uid="uid://bq5nmmq8lfriv" path="res://icon.svg" id="6_8ipda"]
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_40ox3"]
 render_priority = 0
@@ -2444,25 +2442,17 @@ _data = {
 "Walking": SubResource("Animation_4rx8o")
 }
 
-[sub_resource type="BoxShape3D" id="BoxShape3D_gjgwx"]
-size = Vector3(2.15625, 2.8568, 2.27405)
+[sub_resource type="SphereShape3D" id="SphereShape3D_e30ru"]
+radius = 1.36268
+
+[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_ot5ne"]
+radius = 0.652334
+height = 2.92368
 
 [node name="Player" type="CharacterBody3D" groups=["Player"]]
 script = ExtResource("1_3a2sk")
 SPEED = 6.0
 walkingspeed = 6.0
-
-[node name="Stand" type="CollisionShape3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.249358, 0)
-shape = SubResource("CapsuleShape3D_ot5ne")
-
-[node name="IteractCheck" type="RayCast3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, 0, 0.41233, -0.235658)
-script = ExtResource("2_svqsm")
-
-[node name="Attacketime" type="Timer" parent="."]
-wait_time = 0.69
-one_shot = true
 
 [node name="Fleshman_4" type="Node3D" parent="."]
 transform = Transform3D(-1.78779, -0.0311233, -0.0274836, -0.0260216, 1.76224, -0.302921, 0.0323555, -0.30244, -1.76222, 0, -1.23269, 0.306029)
@@ -2718,6 +2708,7 @@ bones/34/rotation = Quaternion(-0.695236, -6.86737e-08, 0.00516083, 0.718763)
 bones/34/scale = Vector3(1, 1, 1)
 
 [node name="player2_002" type="MeshInstance3D" parent="Fleshman_4/Armature/Skeleton3D"]
+transform = Transform3D(1, -1.86265e-09, -1.62981e-09, -7.45058e-09, 1, -1.49012e-08, -9.31323e-10, -4.47035e-08, 1, 0, 0, 0)
 mesh = SubResource("ArrayMesh_vrnqm")
 skin = SubResource("Skin_0sprb")
 
@@ -2728,14 +2719,67 @@ libraries = {
 autoplay = "Walking"
 
 [node name="AttackArea" type="Area3D" parent="Fleshman_4"]
-transform = Transform3D(-0.559048, -0.00813701, 0.0101177, -0.00973233, 0.551057, -0.0945735, -0.00859419, -0.0947243, -0.55105, -0.424431, 0.711541, 0.106482)
+transform = Transform3D(-0.559048, -0.00813701, 0.0101177, -0.00973233, 0.551057, -0.0945734, -0.00859421, -0.0947243, -0.55105, 0.184372, 0.577627, 0.582443)
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Fleshman_4/AttackArea"]
-transform = Transform3D(1, 2.24126e-14, 5.60663e-15, -2.80331e-15, 1, 0, 0, 0, 1, 0.00317445, -0.46155, -1.53269)
-shape = SubResource("BoxShape3D_gjgwx")
+shape = SubResource("SphereShape3D_e30ru")
+
+[node name="Stand" type="CollisionShape3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.205346, 0)
+shape = SubResource("CapsuleShape3D_ot5ne")
+
+[node name="IteractCheck" type="RayCast3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, 0, 0.41233, -0.235658)
+script = ExtResource("2_svqsm")
+
+[node name="Attacketime" type="Timer" parent="."]
+wait_time = 0.69
+one_shot = true
+
+[node name="HealTimer" type="Timer" parent="."]
+wait_time = 6.0
+one_shot = true
 
 [node name="Foot" type="Marker3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.300212, -1.3869)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.434928, -0.186132, -1.3869)
 
-[connection signal="timeout" from="Attacketime" to="." method="_on_timer_timeout"]
+[node name="Pause Menu" type="CanvasLayer" parent="."]
+visible = false
+script = ExtResource("5_c5ekq")
+
+[node name="Sprite2D" type="Sprite2D" parent="Pause Menu"]
+modulate = Color(0, 0, 0, 0.431373)
+position = Vector2(585.5, 381)
+scale = Vector2(9.97656, 7.39062)
+texture = ExtResource("6_8ipda")
+
+[node name="resume" type="Button" parent="Pause Menu"]
+offset_left = 441.0
+offset_top = 131.0
+offset_right = 511.0
+offset_bottom = 162.0
+scale = Vector2(2.81736, 2.86774)
+text = "Resume"
+
+[node name="Menu" type="Button" parent="Pause Menu"]
+offset_left = 476.0
+offset_top = 243.0
+offset_right = 529.0
+offset_bottom = 274.0
+scale = Vector2(2.5775, 2.60668)
+text = "Menu"
+
+[node name="Quit" type="Button" parent="Pause Menu"]
+offset_left = 494.0
+offset_top = 344.0
+offset_right = 536.0
+offset_bottom = 375.0
+scale = Vector2(2.20831, 2.13007)
+text = "Quit"
+
 [connection signal="body_entered" from="Fleshman_4/AttackArea" to="." method="_on_attack_area_body_entered"]
+[connection signal="timeout" from="Attacketime" to="." method="_on_timer_timeout"]
+[connection signal="timeout" from="HealTimer" to="." method="_on_heal_timer_timeout"]
+[connection signal="pressed" from="Pause Menu/resume" to="Pause Menu" method="_on_resume_pressed"]
+[connection signal="pressed" from="Pause Menu/Menu" to="Pause Menu" method="_on_menu_pressed"]
+[connection signal="pressed" from="Pause Menu/Quit" to="Pause Menu" method="_on_quit_pressed"]

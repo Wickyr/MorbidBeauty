@@ -1,6 +1,16 @@
-[gd_scene load_steps=2 format=3 uid="uid://ddr5aujdd2q5a"]
+[gd_scene load_steps=4 format=3 uid="uid://ddr5aujdd2q5a"]
 
 [ext_resource type="Script" path="res://Script/linwood.gd" id="1_xmuco"]
 
+[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_ao5fo"]
+
+[sub_resource type="CapsuleMesh" id="CapsuleMesh_0w7m5"]
+
 [node name="Linwood" type="CharacterBody3D"]
 script = ExtResource("1_xmuco")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+shape = SubResource("CapsuleShape3D_ao5fo")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="CollisionShape3D"]
+mesh = SubResource("CapsuleMesh_0w7m5")
