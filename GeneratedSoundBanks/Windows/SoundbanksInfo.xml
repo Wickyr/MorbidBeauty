@@ -1,0 +1,406 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SoundBanksInfo Platform="Windows" BasePlatform="Windows" SchemaVersion="16" SoundBankVersion="150">
+	<RootPaths>
+		<ProjectRoot>../../../../Documents/WwiseProjects/MorbidBeauty</ProjectRoot>
+		<SourceFilesRoot>../../../../Documents/WwiseProjects/MorbidBeauty/.cache/Windows</SourceFilesRoot>
+		<SoundBanksRoot>.</SoundBanksRoot>
+		<ExternalSourcesInputFile></ExternalSourcesInputFile>
+		<ExternalSourcesOutputRoot>../../../../Documents/WwiseProjects/MorbidBeauty/GeneratedSoundBanks/Windows</ExternalSourcesOutputRoot>
+	</RootPaths>
+	<DialogueEvents/>
+	<SoundBanks>
+		<SoundBank Id="1355168291" Type="User" Language="SFX" Hash="{68220481-007F-714E-A3C5-92C379B66927}">
+			<ShortName>Init</ShortName>
+			<Path>1355168291.bnk</Path>
+			<Plugins>
+				<AudioDevices>
+					<Plugin Id="2317455096" Name="No_Output" LibName="No Output" LibId="11862023"/>
+					<Plugin Id="3859886410" Name="System" LibName="System" LibId="11403271"/>
+				</AudioDevices>
+			</Plugins>
+			<Busses>
+				<Bus Id="3803692087" Name="Master Audio Bus"/>
+			</Busses>
+			<GameParameters>
+				<GameParameter Id="822163944" Name="SS_Air_RPM"/>
+				<GameParameter Id="1029930033" Name="SS_Air_Fury"/>
+				<GameParameter Id="1351367891" Name="SS_Air_Fear"/>
+				<GameParameter Id="2648548617" Name="SS_Air_Month"/>
+				<GameParameter Id="3002758120" Name="SS_Air_Freefall"/>
+				<GameParameter Id="3074696722" Name="SS_Air_Size"/>
+				<GameParameter Id="3203397129" Name="SS_Air_TimeOfDay"/>
+				<GameParameter Id="3715662592" Name="SS_Air_Storm"/>
+				<GameParameter Id="3847924954" Name="SS_Air_Presence"/>
+				<GameParameter Id="4160247818" Name="SS_Air_Turbulence"/>
+			</GameParameters>
+			<AcousticTextures>
+				<AcousticTexture Id="504532776" Name="Brick">
+					<Properties>
+						<Property Name="AbsorptionLow" Type="Real32" Value="12"/>
+						<Property Name="AbsorptionMidLow" Type="Real32" Value="18"/>
+						<Property Name="AbsorptionMidHigh" Type="Real32" Value="23"/>
+						<Property Name="AbsorptionHigh" Type="Real32" Value="35"/>
+						<Property Name="Scattering" Type="Real32" Value="0"/>
+					</Properties>
+				</AcousticTexture>
+				<AcousticTexture Id="513139656" Name="Mountain">
+					<Properties>
+						<Property Name="AbsorptionLow" Type="Real32" Value="0"/>
+						<Property Name="AbsorptionMidLow" Type="Real32" Value="0"/>
+						<Property Name="AbsorptionMidHigh" Type="Real32" Value="0"/>
+						<Property Name="AbsorptionHigh" Type="Real32" Value="0"/>
+						<Property Name="Scattering" Type="Real32" Value="0"/>
+					</Properties>
+				</AcousticTexture>
+				<AcousticTexture Id="841620460" Name="Concrete">
+					<Properties>
+						<Property Name="AbsorptionLow" Type="Real32" Value="6"/>
+						<Property Name="AbsorptionMidLow" Type="Real32" Value="6"/>
+						<Property Name="AbsorptionMidHigh" Type="Real32" Value="6"/>
+						<Property Name="AbsorptionHigh" Type="Real32" Value="14"/>
+						<Property Name="Scattering" Type="Real32" Value="0"/>
+					</Properties>
+				</AcousticTexture>
+				<AcousticTexture Id="1755085759" Name="Wood_Deep">
+					<Properties>
+						<Property Name="AbsorptionLow" Type="Real32" Value="1"/>
+						<Property Name="AbsorptionMidLow" Type="Real32" Value="8"/>
+						<Property Name="AbsorptionMidHigh" Type="Real32" Value="20"/>
+						<Property Name="AbsorptionHigh" Type="Real32" Value="35"/>
+						<Property Name="Scattering" Type="Real32" Value="0"/>
+					</Properties>
+				</AcousticTexture>
+				<AcousticTexture Id="1873957695" Name="Anechoic">
+					<Properties>
+						<Property Name="AbsorptionLow" Type="Real32" Value="100"/>
+						<Property Name="AbsorptionMidLow" Type="Real32" Value="100"/>
+						<Property Name="AbsorptionMidHigh" Type="Real32" Value="100"/>
+						<Property Name="AbsorptionHigh" Type="Real32" Value="100"/>
+						<Property Name="Scattering" Type="Real32" Value="0"/>
+					</Properties>
+				</AcousticTexture>
+				<AcousticTexture Id="1970351858" Name="Fabric">
+					<Properties>
+						<Property Name="AbsorptionLow" Type="Real32" Value="3"/>
+						<Property Name="AbsorptionMidLow" Type="Real32" Value="13"/>
+						<Property Name="AbsorptionMidHigh" Type="Real32" Value="48"/>
+						<Property Name="AbsorptionHigh" Type="Real32" Value="72"/>
+						<Property Name="Scattering" Type="Real32" Value="0"/>
+					</Properties>
+				</AcousticTexture>
+				<AcousticTexture Id="2058049674" Name="Wood">
+					<Properties>
+						<Property Name="AbsorptionLow" Type="Real32" Value="32"/>
+						<Property Name="AbsorptionMidLow" Type="Real32" Value="25"/>
+						<Property Name="AbsorptionMidHigh" Type="Real32" Value="20"/>
+						<Property Name="AbsorptionHigh" Type="Real32" Value="35"/>
+						<Property Name="Scattering" Type="Real32" Value="0"/>
+					</Properties>
+				</AcousticTexture>
+				<AcousticTexture Id="2412606308" Name="Carpet">
+					<Properties>
+						<Property Name="AbsorptionLow" Type="Real32" Value="46"/>
+						<Property Name="AbsorptionMidLow" Type="Real32" Value="45"/>
+						<Property Name="AbsorptionMidHigh" Type="Real32" Value="76"/>
+						<Property Name="AbsorptionHigh" Type="Real32" Value="100"/>
+						<Property Name="Scattering" Type="Real32" Value="0"/>
+					</Properties>
+				</AcousticTexture>
+				<AcousticTexture Id="2637588553" Name="Tile">
+					<Properties>
+						<Property Name="AbsorptionLow" Type="Real32" Value="67"/>
+						<Property Name="AbsorptionMidLow" Type="Real32" Value="41"/>
+						<Property Name="AbsorptionMidHigh" Type="Real32" Value="12"/>
+						<Property Name="AbsorptionHigh" Type="Real32" Value="0"/>
+						<Property Name="Scattering" Type="Real32" Value="0"/>
+					</Properties>
+				</AcousticTexture>
+				<AcousticTexture Id="2928161104" Name="Curtains">
+					<Properties>
+						<Property Name="AbsorptionLow" Type="Real32" Value="7"/>
+						<Property Name="AbsorptionMidLow" Type="Real32" Value="60"/>
+						<Property Name="AbsorptionMidHigh" Type="Real32" Value="0"/>
+						<Property Name="AbsorptionHigh" Type="Real32" Value="84"/>
+						<Property Name="Scattering" Type="Real32" Value="0"/>
+					</Properties>
+				</AcousticTexture>
+				<AcousticTexture Id="3195498748" Name="Cork_Tiles">
+					<Properties>
+						<Property Name="AbsorptionLow" Type="Real32" Value="14"/>
+						<Property Name="AbsorptionMidLow" Type="Real32" Value="30"/>
+						<Property Name="AbsorptionMidHigh" Type="Real32" Value="73"/>
+						<Property Name="AbsorptionHigh" Type="Real32" Value="100"/>
+						<Property Name="Scattering" Type="Real32" Value="0"/>
+					</Properties>
+				</AcousticTexture>
+				<AcousticTexture Id="3670307564" Name="Drywall">
+					<Properties>
+						<Property Name="AbsorptionLow" Type="Real32" Value="2"/>
+						<Property Name="AbsorptionMidLow" Type="Real32" Value="2"/>
+						<Property Name="AbsorptionMidHigh" Type="Real32" Value="2"/>
+						<Property Name="AbsorptionHigh" Type="Real32" Value="2"/>
+						<Property Name="Scattering" Type="Real32" Value="0"/>
+					</Properties>
+				</AcousticTexture>
+				<AcousticTexture Id="4168643977" Name="Acoustic_Banner">
+					<Properties>
+						<Property Name="AbsorptionLow" Type="Real32" Value="37"/>
+						<Property Name="AbsorptionMidLow" Type="Real32" Value="100"/>
+						<Property Name="AbsorptionMidHigh" Type="Real32" Value="100"/>
+						<Property Name="AbsorptionHigh" Type="Real32" Value="100"/>
+						<Property Name="Scattering" Type="Real32" Value="0"/>
+					</Properties>
+				</AcousticTexture>
+				<AcousticTexture Id="4262522749" Name="Wood_Bright">
+					<Properties>
+						<Property Name="AbsorptionLow" Type="Real32" Value="32"/>
+						<Property Name="AbsorptionMidLow" Type="Real32" Value="25"/>
+						<Property Name="AbsorptionMidHigh" Type="Real32" Value="10"/>
+						<Property Name="AbsorptionHigh" Type="Real32" Value="9"/>
+						<Property Name="Scattering" Type="Real32" Value="0"/>
+					</Properties>
+				</AcousticTexture>
+			</AcousticTextures>
+		</SoundBank>
+		<SoundBank Id="3161908922" Type="User" Language="SFX" Hash="{310D7F2A-0A67-2462-D985-5AD62A4BBA11}">
+			<ShortName>Main</ShortName>
+			<Path>3161908922.bnk</Path>
+			<Media>
+				<File Id="85423154" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>RatWalk.wav</ShortName>
+					<CachePath>SFX/RatWalk_BFD06E58.wem</CachePath>
+				</File>
+				<File Id="99596555" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>FS3.wav</ShortName>
+					<CachePath>SFX/FS3_57A1798A.wem</CachePath>
+				</File>
+				<File Id="148068930" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Pain3.wav</ShortName>
+					<CachePath>SFX/Pain3_B44857A0.wem</CachePath>
+				</File>
+				<File Id="209224562" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>RatWalk.wav</ShortName>
+					<CachePath>SFX/RatWalk_112713AC.wem</CachePath>
+				</File>
+				<File Id="225894658" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Pain2.wav</ShortName>
+					<CachePath>SFX/Pain2_818F3B66.wem</CachePath>
+				</File>
+				<File Id="237375162" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>RatWalk.wav</ShortName>
+					<CachePath>SFX/RatWalk_7E28CCAF.wem</CachePath>
+				</File>
+				<File Id="240030660" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>LinwoodWalk3.wav</ShortName>
+					<CachePath>SFX/LinwoodWalk3_818F3B66.wem</CachePath>
+				</File>
+				<File Id="255512674" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>GeneralAmbience2.wav</ShortName>
+					<CachePath>SFX/GeneralAmbience2_818F3B66.wem</CachePath>
+				</File>
+				<File Id="329411520" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>LinwoodWalk4.wav</ShortName>
+					<CachePath>SFX/LinwoodWalk4_818F3B66.wem</CachePath>
+				</File>
+				<File Id="329823285" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Whale.wav</ShortName>
+					<CachePath>SFX/Whale_1C48B789.wem</CachePath>
+				</File>
+				<File Id="432474786" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Drag.wav</ShortName>
+					<CachePath>SFX/Drag_818F3B66.wem</CachePath>
+				</File>
+				<File Id="457529427" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Bite.wav</ShortName>
+					<CachePath>SFX/Bite_8BC99685.wem</CachePath>
+				</File>
+				<File Id="497860259" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>FS2.wav</ShortName>
+					<CachePath>SFX/FS2_90E88873.wem</CachePath>
+				</File>
+				<File Id="636040739" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Splat.wav</ShortName>
+					<CachePath>SFX/Splat_97A4DAE6.wem</CachePath>
+				</File>
+				<File Id="653906428" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>GeneralAmbience.wav</ShortName>
+					<CachePath>SFX/GeneralAmbience_C2352FBE.wem</CachePath>
+				</File>
+				<File Id="682298366" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Squeak1.wav</ShortName>
+					<CachePath>SFX/Squeak1_818F3B66.wem</CachePath>
+				</File>
+				<File Id="720736340" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>FS4.wav</ShortName>
+					<CachePath>SFX/FS4_367C4DDA.wem</CachePath>
+				</File>
+				<File Id="780068149" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>RatWalk.wav</ShortName>
+					<CachePath>SFX/RatWalk_260D68A3.wem</CachePath>
+				</File>
+				<File Id="798476568" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Squeak2.wav</ShortName>
+					<CachePath>SFX/Squeak2_818F3B66.wem</CachePath>
+				</File>
+				<File Id="799628173" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Pain4.wav</ShortName>
+					<CachePath>SFX/Pain4_3C34F2EA.wem</CachePath>
+				</File>
+				<File Id="804822220" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>BeforeEncounter.wav</ShortName>
+					<CachePath>SFX/BeforeEncounter_818F3B66.wem</CachePath>
+				</File>
+				<File Id="881292332" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Squeak3.wav</ShortName>
+					<CachePath>SFX/Squeak3_818F3B66.wem</CachePath>
+				</File>
+				<File Id="902469787" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>LinwoodWalk1.wav</ShortName>
+					<CachePath>SFX/LinwoodWalk1_818F3B66.wem</CachePath>
+				</File>
+				<File Id="925896026" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>LinwoodWalk2.wav</ShortName>
+					<CachePath>SFX/LinwoodWalk2_818F3B66.wem</CachePath>
+				</File>
+				<File Id="939133334" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Stomp.wav</ShortName>
+					<CachePath>SFX/Stomp_818F3B66.wem</CachePath>
+				</File>
+				<File Id="992153646" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>FS1.wav</ShortName>
+					<CachePath>SFX/FS1_F2862A00.wem</CachePath>
+				</File>
+				<File Id="1026987887" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Breathing.wav</ShortName>
+					<CachePath>SFX/Breathing_4992007D.wem</CachePath>
+				</File>
+				<File Id="1063358398" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>CHASE.wav</ShortName>
+					<CachePath>SFX/CHASE_11A93380.wem</CachePath>
+				</File>
+			</Media>
+			<Plugins>
+				<ShareSets>
+					<Plugin Id="1990128658" Name="Room_Medium" LibName="Wwise RoomVerb" LibId="7733251"/>
+					<Plugin Id="3043085106" Name="High_Impact" LibName="Wwise Compressor" LibId="7077891"/>
+					<Plugin Id="3701691487" Name="Hall_Large_Bright" LibName="Wwise RoomVerb" LibId="7733251"/>
+				</ShareSets>
+			</Plugins>
+			<Events>
+				<Event Id="58138747" Name="Active">
+					<MediaRefs>
+						<MediaRef Id="804822220"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="85412153" Name="Ambience">
+					<MediaRefs>
+						<MediaRef Id="255512674"/>
+						<MediaRef Id="653906428"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="1645043423" Name="Bite">
+					<MediaRefs>
+						<MediaRef Id="457529427"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="417490929" Name="Chase">
+					<MediaRefs>
+						<MediaRef Id="1063358398"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="1786804762" Name="Damage">
+					<MediaRefs>
+						<MediaRef Id="148068930"/>
+						<MediaRef Id="225894658"/>
+						<MediaRef Id="799628173"/>
+					</MediaRefs>
+					<PluginRefs>
+						<ShareSets>
+							<PluginRef Id="3043085106"/>
+							<PluginRef Id="3701691487"/>
+						</ShareSets>
+					</PluginRefs>
+				</Event>
+				<Event Id="1874288895" Name="Idle">
+					<MediaRefs>
+						<MediaRef Id="1026987887"/>
+					</MediaRefs>
+					<PluginRefs>
+						<ShareSets>
+							<PluginRef Id="1990128658"/>
+						</ShareSets>
+					</PluginRefs>
+				</Event>
+				<Event Id="3924734864" Name="RatDeath">
+					<MediaRefs>
+						<MediaRef Id="636040739"/>
+					</MediaRefs>
+					<PluginRefs>
+						<ShareSets>
+							<PluginRef Id="3701691487"/>
+						</ShareSets>
+					</PluginRefs>
+				</Event>
+				<Event Id="1690196772" Name="RatSqueak">
+					<MediaRefs>
+						<MediaRef Id="682298366"/>
+						<MediaRef Id="798476568"/>
+						<MediaRef Id="881292332"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="3790712335" Name="RatWalking">
+					<MediaRefs>
+						<MediaRef Id="85423154"/>
+						<MediaRef Id="209224562"/>
+						<MediaRef Id="237375162"/>
+						<MediaRef Id="780068149"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="1166633136" Name="Stomp">
+					<MediaRefs>
+						<MediaRef Id="939133334"/>
+					</MediaRefs>
+					<PluginRefs>
+						<ShareSets>
+							<PluginRef Id="3043085106"/>
+						</ShareSets>
+					</PluginRefs>
+				</Event>
+				<Event Id="3170124113" Name="Voice">
+					<MediaRefs>
+						<MediaRef Id="329823285"/>
+						<MediaRef Id="1026987887"/>
+					</MediaRefs>
+					<PluginRefs>
+						<ShareSets>
+							<PluginRef Id="1990128658"/>
+						</ShareSets>
+					</PluginRefs>
+				</Event>
+				<Event Id="2108779966" Name="Walk">
+					<MediaRefs>
+						<MediaRef Id="240030660"/>
+						<MediaRef Id="329411520"/>
+						<MediaRef Id="432474786"/>
+						<MediaRef Id="902469787"/>
+						<MediaRef Id="925896026"/>
+					</MediaRefs>
+					<PluginRefs>
+						<ShareSets>
+							<PluginRef Id="3701691487"/>
+						</ShareSets>
+					</PluginRefs>
+				</Event>
+				<Event Id="340271938" Name="Walking">
+					<MediaRefs>
+						<MediaRef Id="99596555"/>
+						<MediaRef Id="497860259"/>
+						<MediaRef Id="720736340"/>
+						<MediaRef Id="992153646"/>
+					</MediaRefs>
+				</Event>
+			</Events>
+		</SoundBank>
+	</SoundBanks>
+	<FileHash>{ADD46AE1-B9FC-DDC3-F8CF-4CD80DC1712D}</FileHash>
+</SoundBanksInfo>

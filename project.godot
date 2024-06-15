@@ -11,7 +11,7 @@ config_version=5
 [application]
 
 config/name="Morbid Beauty"
-run/main_scene="res://Scenes/mainTest.tscn"
+run/main_scene="res://Scenes/main.tscn"
 config/features=PackedStringArray("4.2", "Forward Plus")
 config/icon="res://icon.svg"
 
@@ -23,7 +23,7 @@ WwiseRuntimeManager="*res://addons/Wwise/runtime/wwise_runtime_manager.gd"
 
 window/size/mode=2
 window/stretch/mode="canvas_items"
-window/stretch/aspect="expand"
+<<<<<<<HEADwindow/stretch/mode="viewport"
 
 [filesystem]
 
@@ -61,8 +61,8 @@ d={
 }
 pause={
 "deadzone": 0.5,
-"events": [Object(InputEventJoypadButton,"resource_local_to_scene":false,"resource_name":"","device":-1,"button_index":6,"pressure":0.0,"pressed":true,"script":null)
-, Object(InputEventKey,"resource_local_to_scene":false,"resource_name":"","device":-1,"window_id":0,"alt_pressed":false,"shift_pressed":false,"ctrl_pressed":false,"meta_pressed":false,"pressed":false,"keycode":0,"physical_keycode":4194305,"key_label":0,"unicode":0,"echo":false,"script":null)
+"events": [Object(InputEventKey,"resource_local_to_scene":false,"resource_name":"","device":-1,"window_id":0,"alt_pressed":false,"shift_pressed":false,"ctrl_pressed":false,"meta_pressed":false,"pressed":false,"keycode":0,"physical_keycode":4194305,"key_label":0,"unicode":0,"echo":false,"script":null)
+, Object(InputEventJoypadButton,"resource_local_to_scene":false,"resource_name":"","device":-1,"button_index":6,"pressure":0.0,"pressed":true,"script":null)
 ]
 }
 attack={
@@ -90,7 +90,7 @@ common_user_settings/base_path="res://GeneratedSoundBanks"
 common_user_settings/startup_language="English(US)"
 common_user_settings/load_init_bank_at_startup=false
 common_user_settings/suspend_on_focus_loss=false
-common_user_settings/use_soundbank_names=true
+common_user_settings/use_soundbank_names=false
 common_user_settings/engine_logging=false
 common_user_settings/maximum_number_of_positioning_paths=255
 common_user_settings/command_queue_size=262144

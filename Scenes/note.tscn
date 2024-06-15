@@ -1,4 +1,4 @@
-[gd_scene load_steps=4 format=3 uid="uid://cuolso5nqjsml"]
+[gd_scene load_steps=4 format=3 uid="uid://svsjvyf7xjx7"]
 
 [ext_resource type="Script" path="res://Script/Note.gd" id="1_3865g"]
 [ext_resource type="Texture2D" uid="uid://bq5nmmq8lfriv" path="res://icon.svg" id="2_jmfeo"]
