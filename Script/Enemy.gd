@@ -18,7 +18,6 @@ var waypointIndex : int
 @export var damage = 10
 @onready var patrol_timer = $PatrolTimer
 var player
-
 var PlayerEarShotFar : bool
 var PlayerEarShotClose : bool
 var PlayerSightFar : bool
@@ -194,8 +193,7 @@ func _on_attack_t_imer_timeout():
 	timer.start()
 	anim.play("Attack")
 	anim.speed_scale = 1
-
-
+			
 func _on_timer_timeout():
 	if attack == true:
 		player.health = player.health - 3

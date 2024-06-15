@@ -4,20 +4,24 @@ Event	ID	Name			Wwise Object Path	Notes
 	1166633136	Stomp			\Default Work Unit\Player\Stomp	
 	1786804762	Damage			\Default Work Unit\Player\Damage	
 	1874288895	Idle			\Default Work Unit\Player\Idle	
+	3924734864	RatDeath			\Default Work Unit\Rat\RatDeath	
+	4045202471	RatSFX			\Default Work Unit\Rat\RatSFX	
 
 Effect plug-ins	ID	Name	Type				Notes
 	3043085106	High_Impact	Wwise Compressor			
 	3701691487	Hall_Large_Bright	Wwise RoomVerb			
 
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
-	99596555	FS3	C:\Users\jlutt\Documents\WwiseProjects\MorbidBeauty\.cache\Windows\SFX\FS3_2F47192F.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\Footsteps\FS3		53088
-	148068930	Pain2	C:\Users\jlutt\Documents\WwiseProjects\MorbidBeauty\.cache\Windows\SFX\Pain3_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\Pain\Pain2		129072
+	99596555	FS3	C:\Users\jlutt\Documents\WwiseProjects\MorbidBeauty\.cache\Windows\SFX\FS3_D7FED949.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\Footsteps\FS3		50116
+	148068930	Pain2	C:\Users\jlutt\Documents\WwiseProjects\MorbidBeauty\.cache\Windows\SFX\Pain3_13B54FA9.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\Pain\Pain2		111936
 	225894658	Pain1	C:\Users\jlutt\Documents\WwiseProjects\MorbidBeauty\.cache\Windows\SFX\Pain2_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\Pain\Pain1		48692
-	497860259	FS2	C:\Users\jlutt\Documents\WwiseProjects\MorbidBeauty\.cache\Windows\SFX\FS2_820BC841.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\Footsteps\FS2		51616
+	237375162	RatWalk	C:\Users\jlutt\Documents\WwiseProjects\MorbidBeauty\.cache\Windows\SFX\RatWalk_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\Rat\RatWalk		364336
+	497860259	FS2	C:\Users\jlutt\Documents\WwiseProjects\MorbidBeauty\.cache\Windows\SFX\FS2_CEFDEBF8.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\Footsteps\FS2		50116
 	579301522	Death	C:\Users\jlutt\Documents\WwiseProjects\MorbidBeauty\.cache\Windows\SFX\DeathSound_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\Death		1984660
-	720736340	FS4	C:\Users\jlutt\Documents\WwiseProjects\MorbidBeauty\.cache\Windows\SFX\FS4_B1028135.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\Footsteps\FS4		53088
-	799628173	Pain3	C:\Users\jlutt\Documents\WwiseProjects\MorbidBeauty\.cache\Windows\SFX\Pain4_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\Pain\Pain3		112252
-	939133334	Stomp	C:\Users\jlutt\Documents\WwiseProjects\MorbidBeauty\.cache\Windows\SFX\Stomp_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\Stomp		145544
-	992153646	FS1	C:\Users\jlutt\Documents\WwiseProjects\MorbidBeauty\.cache\Windows\SFX\FS1_F6106BC7.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\Footsteps\FS1		53500
-	1026987887	Breathing	C:\Users\jlutt\Documents\WwiseProjects\MorbidBeauty\.cache\Windows\SFX\Breathing_34EA0DA9.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\Breathing		1398624
+	636040739	Splat	C:\Users\jlutt\Documents\WwiseProjects\MorbidBeauty\.cache\Windows\SFX\Splat_B4C858E4.wem		\Actor-Mixer Hierarchy\Default Work Unit\Rat\Splat		55348
+	720736340	FS4	C:\Users\jlutt\Documents\WwiseProjects\MorbidBeauty\.cache\Windows\SFX\FS4_0435F735.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\Footsteps\FS4		51568
+	799628173	Pain3	C:\Users\jlutt\Documents\WwiseProjects\MorbidBeauty\.cache\Windows\SFX\Pain4_9071E6A0.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\Pain\Pain3		44524
+	939133334	Stomp	C:\Users\jlutt\Documents\WwiseProjects\MorbidBeauty\.cache\Windows\SFX\Stomp_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\Stomp		159788
+	992153646	FS1	C:\Users\jlutt\Documents\WwiseProjects\MorbidBeauty\.cache\Windows\SFX\FS1_851D49FA.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\Footsteps\FS1		50840
+	1026987887	Breathing	C:\Users\jlutt\Documents\WwiseProjects\MorbidBeauty\.cache\Windows\SFX\Breathing_4992007D.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\Breathing		1398624
 

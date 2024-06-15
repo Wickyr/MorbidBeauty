@@ -162,37 +162,45 @@
 				</AcousticTexture>
 			</AcousticTextures>
 		</SoundBank>
-		<SoundBank Id="3161908922" Type="User" Language="SFX" Hash="{FC4F6842-9F02-E7DF-47AD-B6CEA3E115FB}">
+		<SoundBank Id="3161908922" Type="User" Language="SFX" Hash="{4CA2BCED-8746-B2CD-A7FB-BA6889B9561D}">
 			<ShortName>Main</ShortName>
 			<Path>3161908922.bnk</Path>
 			<Media>
 				<File Id="99596555" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>FS3.wav</ShortName>
-					<CachePath>SFX/FS3_2F47192F.wem</CachePath>
+					<CachePath>SFX/FS3_D7FED949.wem</CachePath>
 				</File>
 				<File Id="148068930" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Pain3.wav</ShortName>
-					<CachePath>SFX/Pain3_818F3B66.wem</CachePath>
+					<CachePath>SFX/Pain3_13B54FA9.wem</CachePath>
 				</File>
 				<File Id="225894658" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Pain2.wav</ShortName>
 					<CachePath>SFX/Pain2_818F3B66.wem</CachePath>
 				</File>
+				<File Id="237375162" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>RatWalk.wav</ShortName>
+					<CachePath>SFX/RatWalk_818F3B66.wem</CachePath>
+				</File>
 				<File Id="497860259" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>FS2.wav</ShortName>
-					<CachePath>SFX/FS2_820BC841.wem</CachePath>
+					<CachePath>SFX/FS2_CEFDEBF8.wem</CachePath>
 				</File>
 				<File Id="579301522" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>DeathSound.wav</ShortName>
 					<CachePath>SFX/DeathSound_818F3B66.wem</CachePath>
 				</File>
+				<File Id="636040739" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Splat.wav</ShortName>
+					<CachePath>SFX/Splat_B4C858E4.wem</CachePath>
+				</File>
 				<File Id="720736340" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>FS4.wav</ShortName>
-					<CachePath>SFX/FS4_B1028135.wem</CachePath>
+					<CachePath>SFX/FS4_0435F735.wem</CachePath>
 				</File>
 				<File Id="799628173" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Pain4.wav</ShortName>
-					<CachePath>SFX/Pain4_818F3B66.wem</CachePath>
+					<CachePath>SFX/Pain4_9071E6A0.wem</CachePath>
 				</File>
 				<File Id="939133334" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Stomp.wav</ShortName>
@@ -200,11 +208,11 @@
 				</File>
 				<File Id="992153646" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>FS1.wav</ShortName>
-					<CachePath>SFX/FS1_F6106BC7.wem</CachePath>
+					<CachePath>SFX/FS1_851D49FA.wem</CachePath>
 				</File>
 				<File Id="1026987887" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Breathing.wav</ShortName>
-					<CachePath>SFX/Breathing_34EA0DA9.wem</CachePath>
+					<CachePath>SFX/Breathing_4992007D.wem</CachePath>
 				</File>
 			</Media>
 			<Plugins>
@@ -242,6 +250,21 @@
 						</ShareSets>
 					</PluginRefs>
 				</Event>
+				<Event Id="3924734864" Name="RatDeath">
+					<MediaRefs>
+						<MediaRef Id="636040739"/>
+					</MediaRefs>
+					<PluginRefs>
+						<ShareSets>
+							<PluginRef Id="3701691487"/>
+						</ShareSets>
+					</PluginRefs>
+				</Event>
+				<Event Id="4045202471" Name="RatSFX">
+					<MediaRefs>
+						<MediaRef Id="237375162"/>
+					</MediaRefs>
+				</Event>
 				<Event Id="1166633136" Name="Stomp">
 					<MediaRefs>
 						<MediaRef Id="939133334"/>
@@ -263,5 +286,5 @@
 			</Events>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{0726F822-0E2E-3AAE-AF0D-09E49E3E3B7D}</FileHash>
+	<FileHash>{8A3C9C11-A901-4245-8554-628807D93FFF}</FileHash>
 </SoundBanksInfo>
