@@ -16,6 +16,7 @@ var attacking = false
 var dead = false
 @export var Spawn = preload("res://Scenes/rat_splatter.tscn")
 @onready var foot = $Foot
+@onready var walking = true
 
 # Get the gravity from the project settings to be synced with RigidBody nodes.
 var gravity = ProjectSettings.get_setting("physics/3d/default_gravity")
@@ -40,6 +41,7 @@ func _physics_process(delta):
 		velocity.x = 0
 		velocity.z = 0
 		SPEED = 0  # Stop all movement
+		walking = false
 		anim.play("Death")  # Play death animation
 		gameover.visible = true
 		if not deathSoundPlayed:
@@ -48,7 +50,7 @@ func _physics_process(delta):
 		if Input.is_action_pressed("w") and Input.is_action_just_pressed("s"):
 			velocity.z = 0
 			velocity.x = 0
-		elif Input.is_action_pressed("w") and not attacking:
+		elif Input.is_action_pressed("w") and not attacking and walking == true:
 			velocity.x = direction.x * SPEED
 			velocity.z = direction.z * SPEED
 			anim.play("Walking")
@@ -59,7 +61,7 @@ func _physics_process(delta):
 			else:
 				footstepTimer += delta
 			anim.speed_scale = 1
-		elif Input.is_action_pressed("s") and not attacking:
+		elif Input.is_action_pressed("s") and not attacking and walking == true:
 			velocity.x = -direction.x * -SPEED/2
 			velocity.z = -direction.z * -SPEED/2
 			anim.play("Walking")

@@ -4,7 +4,8 @@ enum States{
 	chasing,
 	hunting,
 	waiting,
-	attack
+	attack,
+	seach
 }
 
 var currentState : States
@@ -108,6 +109,8 @@ func _process(delta):
 			anim.play("Grab")
 			fleshman_4.visible = true
 			grabcam.current = true
+		States.seach:
+			navAgent.set_target_position(player.position)
 		States.waiting:
 			pass
 
@@ -185,7 +188,8 @@ func _on_attack_area_body_exited(body):
 
 func _on_long_hearing_body_entered(body):
 	if body.is_in_group("Player"):
-		if player.noisy == true:
+		print("heard")
+		if player.noisy == true: 
 			navAgent.set_target_position(player.position)
 		if(navAgent.is_navigation_finished()):
 			patrol_timer.start()
@@ -194,6 +198,8 @@ func _on_long_hearing_body_entered(body):
 
 func _on_long_hearing_body_exited(body):
 	pass # Replace with function body.
+
+
 
 
 
