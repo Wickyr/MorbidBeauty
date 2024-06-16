@@ -7,6 +7,7 @@ enum States{
 	attack,
 	seach
 }
+@onready var listener = $"../Audio/AkListener3D"
 
 var currentState : States
 var navAgent : NavigationAgent3D
@@ -28,6 +29,7 @@ var puddle
 var footstepCooldown = 0.8  # Adjust as needed, in seconds
 var runFootstepCooldown = 0.4
 var footstepTimer = 0.0
+
 var gravity = ProjectSettings.get_setting("physics/3d/default_gravity")
 @onready var anim = $LinWood_1/AnimationPlayer
 @onready var fleshman_4 = $Fleshman_4
@@ -99,11 +101,13 @@ func _process(delta):
 			anim.play("Grab")
 			fleshman_4.visible = true
 			grabcam.current = true
+			listener.position = grabcam.global_position
+			
 		States.seach:
 			navAgent.set_target_position(player.position)
 		States.waiting:
 			pass
-
+	
 func MoveTowardPoint(delta, speed):
 	var targetPos = navAgent.get_next_path_position()
 	var direction = global_position.direction_to(targetPos)
@@ -184,7 +188,6 @@ func _on_long_hearing_body_entered(body):
 		if(navAgent.is_navigation_finished()):
 			patrol_timer.start()
 			currentState = States.waiting
-
 
 func _on_long_hearing_body_exited(body):
 	pass # Replace with function body.
