@@ -9,7 +9,7 @@
 	</RootPaths>
 	<DialogueEvents/>
 	<SoundBanks>
-		<SoundBank Id="1355168291" Type="User" Language="SFX" Hash="{016D3D9F-1DF4-9E68-9239-99A5D541F20F}">
+		<SoundBank Id="1355168291" Type="User" Language="SFX" Hash="{A873FB2F-9860-8C2C-360F-D28371AB8B61}">
 			<ShortName>Init</ShortName>
 			<Path>1355168291.bnk</Path>
 			<Plugins>
@@ -162,7 +162,7 @@
 				</AcousticTexture>
 			</AcousticTextures>
 		</SoundBank>
-		<SoundBank Id="3161908922" Type="User" Language="SFX" Hash="{03F0CA7F-15C8-636C-44E4-48779C1DD6B1}">
+		<SoundBank Id="3161908922" Type="User" Language="SFX" Hash="{4912C58F-6627-8CC3-78D2-4283892723E9}">
 			<ShortName>Main</ShortName>
 			<Path>3161908922.bnk</Path>
 			<Media>
@@ -232,7 +232,7 @@
 				</File>
 				<File Id="653906428" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>GeneralAmbience.wav</ShortName>
-					<CachePath>SFX/GeneralAmbience_50BC6CB7.wem</CachePath>
+					<CachePath>SFX/GeneralAmbience_32623C36.wem</CachePath>
 				</File>
 				<File Id="682298366" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Squeak1.wav</ShortName>
@@ -299,11 +299,6 @@
 				<Custom>
 					<Plugin Id="759195188" Name="Silence" LibName="Wwise Silence" LibId="6619138"/>
 				</Custom>
-				<ShareSets>
-					<Plugin Id="602546716" Name="Room_Large" LibName="Wwise RoomVerb" LibId="7733251"/>
-					<Plugin Id="1990128658" Name="Room_Medium" LibName="Wwise RoomVerb" LibId="7733251"/>
-					<Plugin Id="3701691487" Name="Hall_Large_Bright" LibName="Wwise RoomVerb" LibId="7733251"/>
-				</ShareSets>
 			</Plugins>
 			<Events>
 				<Event Id="58138747" Name="Active">
@@ -311,11 +306,6 @@
 						<MediaRef Id="804822220"/>
 						<MediaRef Id="1052871034"/>
 					</MediaRefs>
-					<PluginRefs>
-						<ShareSets>
-							<PluginRef Id="602546716"/>
-						</ShareSets>
-					</PluginRefs>
 				</Event>
 				<Event Id="85412153" Name="Ambience">
 					<MediaRefs>
@@ -351,11 +341,6 @@
 					<MediaRefs>
 						<MediaRef Id="1026987887"/>
 					</MediaRefs>
-					<PluginRefs>
-						<ShareSets>
-							<PluginRef Id="1990128658"/>
-						</ShareSets>
-					</PluginRefs>
 				</Event>
 				<Event Id="3924734864" Name="RatDeath">
 					<MediaRefs>
@@ -388,11 +373,6 @@
 						<MediaRef Id="329823285"/>
 						<MediaRef Id="1026987887"/>
 					</MediaRefs>
-					<PluginRefs>
-						<ShareSets>
-							<PluginRef Id="1990128658"/>
-						</ShareSets>
-					</PluginRefs>
 				</Event>
 				<Event Id="2108779966" Name="Walk">
 					<MediaRefs>
@@ -402,11 +382,6 @@
 						<MediaRef Id="902469787"/>
 						<MediaRef Id="925896026"/>
 					</MediaRefs>
-					<PluginRefs>
-						<ShareSets>
-							<PluginRef Id="3701691487"/>
-						</ShareSets>
-					</PluginRefs>
 				</Event>
 				<Event Id="340271938" Name="Walking">
 					<MediaRefs>
@@ -419,5 +394,5 @@
 			</Events>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{4FEC7D08-9054-A521-4606-22605BB10B41}</FileHash>
+	<FileHash>{44E7C6D9-B110-F8AB-C238-14333E06F379}</FileHash>
 </SoundBanksInfo>
