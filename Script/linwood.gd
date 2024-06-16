@@ -157,9 +157,7 @@ func _on_long_hearing_body_entered(body):
 	if body.is_in_group("Player"):
 		if player.noisy == true:
 			navAgent.set_target_position(player.position)
-		if(navAgent.is_navigation_finished()):
-			patrol_timer.start()
-			currentState = States.waiting
+
 
 
 func _on_long_hearing_body_exited(body):
