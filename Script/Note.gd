@@ -2,6 +2,8 @@ extends Node3D
 var toggle = false
 var interactable = true
 @onready var Note = $"../Notes/Sprite2D"
+@onready var pree_e = $"../../Label3D"
+
 
 func interact():
 	if interactable == true:
@@ -18,3 +20,8 @@ func interact():
 func _on_area_3d_body_exited(body):
 	if body.is_in_group("Player"):
 		Note.visible = false
+		pree_e.visible = false
+
+
+func _on_area_3d_body_entered(body):
+	pree_e.visible = true

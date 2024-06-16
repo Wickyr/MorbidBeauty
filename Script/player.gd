@@ -24,6 +24,8 @@ var deathSoundPlayed = false
 # Footstep sound cooldown variables
 var footstepCooldown = 0.6  # Adjust as needed, in seconds
 var footstepTimer = 0.0
+@onready var collision_shape_3d = $Fleshman_4/AttackArea/CollisionShape3D
+
 
 func _ready():
 	Wwise.register_game_obj(self, self.name)
@@ -101,6 +103,7 @@ func _physics_process(delta):
 		print("attacked")
 		anim.play("Stomp")
 		anim.speed_scale = 2
+		collision_shape_3d.disabled = false
 		Wwise.set_3d_position(self, transform)
 		Wwise.post_event_id(AK.EVENTS.STOMP, self)
 
@@ -117,6 +120,7 @@ func _on_attack_area_body_entered(body):
 func _on_timer_timeout():
 	attacking = false
 	SPEED = 3
+	collision_shape_3d.disabled = true
 	print("attack stop")
 	anim.play("Action")
 	
