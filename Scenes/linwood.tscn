@@ -6,9 +6,8 @@
 
 [sub_resource type="CapsuleMesh" id="CapsuleMesh_0w7m5"]
 
-[node name="Linwood" type="CharacterBody3D" node_paths=PackedStringArray("puddle")]
+[node name="Linwood" type="CharacterBody3D"]
 script = ExtResource("1_xmuco")
-puddle = []
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="."]
 shape = SubResource("CapsuleShape3D_ao5fo")

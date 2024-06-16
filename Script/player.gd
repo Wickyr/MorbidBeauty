@@ -20,16 +20,12 @@ var dead = false
 # Get the gravity from the project settings to be synced with RigidBody nodes.
 var gravity = ProjectSettings.get_setting("physics/3d/default_gravity")
 var deathSoundPlayed = false
-
 # Footstep sound cooldown variables
 var footstepCooldown = 0.6  # Adjust as needed, in seconds
 var footstepTimer = 0.0
 
 func _ready():
 	Wwise.register_game_obj(self, self.name)
-	Wwise.register_listener(self)
-	Wwise.load_bank_id(AK.BANKS.INIT)
-	Wwise.load_bank_id(AK.BANKS.MAIN)
 	
 func _physics_process(delta):
 	if not is_on_floor():
@@ -57,6 +53,7 @@ func _physics_process(delta):
 			velocity.z = direction.z * SPEED
 			anim.play("Walking")
 			if footstepTimer >= footstepCooldown:
+				Wwise.set_3d_position(self, transform)
 				Wwise.post_event_id(AK.EVENTS.WALKING, self)
 				footstepTimer = 0.0  # Reset timer after playing sound
 			else:
@@ -67,6 +64,7 @@ func _physics_process(delta):
 			velocity.z = -direction.z * -SPEED/2
 			anim.play("Walking")
 			if footstepTimer >= footstepCooldown:
+				Wwise.set_3d_position(self, transform)
 				Wwise.post_event_id(AK.EVENTS.WALKING, self)
 				footstepTimer = 0.0  # Reset timer after playing sound
 			else:
@@ -101,6 +99,7 @@ func _physics_process(delta):
 		print("attacked")
 		anim.play("Stomp")
 		anim.speed_scale = 2
+		Wwise.set_3d_position(self, transform)
 		Wwise.post_event_id(AK.EVENTS.STOMP, self)
 
 func _on_attack_area_body_entered(body):

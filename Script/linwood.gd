@@ -23,15 +23,15 @@ var PlayerEarShotClose : bool
 var PlayerSightFar : bool
 var PlayerSightClose : bool
 var puddle 
-
+# Footstep sound cooldown variables
+var footstepCooldown = 0.8  # Adjust as needed, in seconds
+var runFootstepCooldown = 0.4
+var footstepTimer = 0.0
 var gravity = ProjectSettings.get_setting("physics/3d/default_gravity")
 @onready var anim = $LinWood_1/AnimationPlayer
 @onready var fleshman_4 = $Fleshman_4
 @onready var stop = $Stop
 @onready var grabcam = $Grabcam
-
-
-
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
@@ -40,6 +40,7 @@ func _ready():
 	navAgent.set_target_position(waypoints[0].global_position)
 	player = get_tree().get_nodes_in_group("Player")[0]
 	puddle = get_tree().get_nodes_in_group("Puddle")
+	Wwise.register_game_obj(self, self.name)
 
 
 func _physics_process(delta):
@@ -56,6 +57,12 @@ func _process(delta):
 				return
 			MoveTowardPoint(delta, patrolspeed)
 			anim.play("Walk")
+			if footstepTimer >= footstepCooldown:
+				Wwise.set_3d_position(self, transform)
+				Wwise.post_event_id(AK.EVENTS.WALK, self)
+				footstepTimer = 0.0  # Reset timer after playing sound
+			else:
+				footstepTimer += delta
 			pass
 		States.chasing:
 			if(navAgent.is_navigation_finished()):
@@ -65,6 +72,12 @@ func _process(delta):
 			navAgent.set_target_position(player.global_position)
 			MoveTowardPoint(delta, chasespeed)
 			anim.play("Run")
+			if footstepTimer >= runFootstepCooldown:
+				Wwise.set_3d_position(self, transform)
+				Wwise.post_event_id(AK.EVENTS.WALK, self)
+				footstepTimer = 0.0  # Reset timer after playing sound
+			else:
+				footstepTimer += delta
 			pass
 		States.hunting:
 			if(navAgent.is_navigation_finished()):
@@ -73,6 +86,12 @@ func _process(delta):
 				anim.play("Idle")
 			MoveTowardPoint(delta, patrolspeed)
 			anim.play("Walk")
+			if footstepTimer >= footstepCooldown:
+				Wwise.set_3d_position(self, transform)
+				Wwise.post_event_id(AK.EVENTS.WALK, self)
+				footstepTimer = 0.0  # Reset timer after playing sound
+			else:
+				footstepTimer += delta
 			pass
 		States.attack:
 			anim.play("Grab")
