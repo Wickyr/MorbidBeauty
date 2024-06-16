@@ -1,0 +1,101 @@
+[gd_scene load_steps=8 format=3 uid="uid://itu3h4htfx8a"]
+
+[ext_resource type="FontFile" uid="uid://cw7l6e5x6thbe" path="res://Graphics/UI/myscars_tt.ttf" id="2_2kgyp"]
+[ext_resource type="PackedScene" uid="uid://dnqdbvojf04sk" path="res://Graphics/Env/Table_1.glb" id="3_cseol"]
+[ext_resource type="Script" path="res://Script/Note.gd" id="4_x03oe"]
+[ext_resource type="PackedScene" uid="uid://b513hm7eoi5os" path="res://Graphics/Env/Candle.glb" id="5_enh8h"]
+[ext_resource type="Texture2D" uid="uid://b1pibghdkn0am" path="res://Graphics/Env/page_2.png" id="5_joi31"]
+[ext_resource type="FontFile" uid="uid://baqdtwn6u0n4o" path="res://Graphics/UI/gothic_ultra_tt.ttf" id="6_bc27w"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_l1r4j"]
+
+[node name="Note 3" type="Node3D"]
+
+[node name="Area3D" type="Area3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.312269, 0.462258)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Area3D"]
+transform = Transform3D(2.58297, 0, 0, 0, 2.58297, 0, 0, 0, 2.58297, 0, 0, 0)
+shape = SubResource("BoxShape3D_l1r4j")
+
+[node name="Notes" type="CanvasLayer" parent="."]
+
+[node name="Sprite2D" type="Sprite2D" parent="Notes"]
+visible = false
+position = Vector2(551, 322)
+scale = Vector2(0.58835, 0.631417)
+texture = ExtResource("5_joi31")
+
+[node name="Label" type="Label" parent="Notes/Sprite2D"]
+offset_left = -299.142
+offset_top = -376.93
+offset_right = 14843.9
+offset_bottom = 652.07
+theme_override_colors/font_color = Color(0.214589, 2.99313e-07, 0.0100157, 1)
+theme_override_fonts/font = ExtResource("2_2kgyp")
+theme_override_font_sizes/font_size = 40
+text = "Entry 3 From Linwood 
+	That… 
+that was not what I expected. 
+It was grotesque, twisted. 
+No god would make that.
+ These are not what I thought. 
+These are monsters, not our saviors.
+ I think they saw my disgust. 
+They acted differently after I saw it. 
+I don’t know if I can leave. 
+I just wanted to save us. 
+
+
+
+I just wanted to help save us.
+
+
+
+"
+
+[node name="Label2" type="Label" parent="Notes/Sprite2D"]
+offset_left = -311.039
+offset_top = 156.79
+offset_right = 14832.0
+offset_bottom = 1185.79
+theme_override_colors/font_color = Color(0.0328586, 4.85068e-08, 0.000673282, 1)
+theme_override_fonts/font = ExtResource("6_bc27w")
+theme_override_font_sizes/font_size = 45
+text = "
+
+
+
+NEW RECRUIT STATUS: Making a fine “experiment”"
+
+[node name="Table_1" parent="." instance=ExtResource("3_cseol")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0527745, -1.02935, -0.42)
+
+[node name="CSGBox3D" type="CSGBox3D" parent="Table_1"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0376587, 1.25293, -0.00491333)
+visible = false
+use_collision = true
+size = Vector3(2.86047, 2.49414, 1.65363)
+script = ExtResource("4_x03oe")
+
+[node name="Sprite3D" type="Sprite3D" parent="."]
+transform = Transform3D(0.083175, -0.0733001, 0.000152239, -8.60319e-12, 0.000230257, 0.110865, -0.0733003, -0.0831749, 0.000172747, 0.171232, 0.121119, -0.429555)
+texture = ExtResource("5_joi31")
+
+[node name="Candle" parent="." instance=ExtResource("5_enh8h")]
+transform = Transform3D(0.164517, 0.93056, -0.327097, -0.963946, 0.0813645, -0.253354, -0.209147, 0.356985, 0.910395, -1.25651, 0.279376, -0.740566)
+
+[node name="OmniLight3D" type="OmniLight3D" parent="Candle"]
+transform = Transform3D(0.913368, 0, 0.407135, 0, 1, 0, -0.407135, 0, 0.913368, -0.00690567, 0.631235, 0.00237644)
+light_energy = 1.454
+omni_range = 2.41223
+
+[node name="Label3D" type="Label3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.837454, 0.676549, 0.286752)
+visible = false
+text = "Press e"
+font = ExtResource("6_bc27w")
+font_size = 40
+
+[connection signal="body_entered" from="Area3D" to="Table_1/CSGBox3D" method="_on_area_3d_body_entered"]
+[connection signal="body_exited" from="Area3D" to="Table_1/CSGBox3D" method="_on_area_3d_body_exited"]

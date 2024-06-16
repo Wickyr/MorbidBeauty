@@ -1,0 +1,95 @@
+[gd_scene load_steps=7 format=3 uid="uid://bdu660wrhledf"]
+
+[ext_resource type="Texture2D" uid="uid://b1pibghdkn0am" path="res://Graphics/Env/page_2.png" id="1_wu0ih"]
+[ext_resource type="FontFile" uid="uid://baqdtwn6u0n4o" path="res://Graphics/UI/gothic_ultra_tt.ttf" id="3_jjdrj"]
+[ext_resource type="PackedScene" uid="uid://dnqdbvojf04sk" path="res://Graphics/Env/Table_1.glb" id="4_u6hi3"]
+[ext_resource type="Script" path="res://Script/Note.gd" id="5_al6o6"]
+[ext_resource type="PackedScene" uid="uid://b513hm7eoi5os" path="res://Graphics/Env/Candle.glb" id="6_jfu1q"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_l1r4j"]
+
+[node name="Records" type="Node3D"]
+
+[node name="Area3D" type="Area3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.312269, 0.462258)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Area3D"]
+transform = Transform3D(2.58297, 0, 0, 0, 2.58297, 0, 0, 0, 2.58297, 0, 0, 0)
+shape = SubResource("BoxShape3D_l1r4j")
+
+[node name="Notes" type="CanvasLayer" parent="."]
+
+[node name="Sprite2D" type="Sprite2D" parent="Notes"]
+visible = false
+modulate = Color(0.89059, 0.89059, 0.89059, 1)
+position = Vector2(551, 322)
+scale = Vector2(0.58835, 0.631417)
+texture = ExtResource("1_wu0ih")
+
+[node name="Label" type="Label" parent="Notes/Sprite2D"]
+offset_left = -273.647
+offset_top = -456.117
+offset_right = 14869.4
+offset_bottom = 628.883
+theme_override_colors/font_color = Color(0.312779, 2.10572e-08, 0.0211052, 1)
+theme_override_fonts/font = ExtResource("3_jjdrj")
+theme_override_font_sizes/font_size = 35
+text = "Record 1 - Experiment \"Linwood\"
+Leader: Tell me Linwood, 
+what doth thou desire,
+ why come before us?
+ I am aware thou hath spoken of 
+this before, but please indulge me.
+
+Linwood: I only wished to help, 
+I yearned to find some salvation in these ruins.
+
+Leader: Ahh, so thou wished to be 
+a savior, a hero. 
+Thou wished to be loved by the 
+ones thou loved dear. Am I wrong? 
+Do I speak lies?
+
+Linwood: My sole desire was to save them.
+To give them nothing but sweet lives.
+
+Leader: Oh cry not my dear Linwood, cry not now. 
+You may still help us, help us with great progress.
+ Save your crying for when it hurts, and thou will hurt soon. 
+
+
+
+
+"
+
+[node name="Table_1" parent="." instance=ExtResource("4_u6hi3")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0527745, -1.02935, -0.42)
+
+[node name="CSGBox3D" type="CSGBox3D" parent="Table_1"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0376587, 1.25293, -0.00491333)
+visible = false
+use_collision = true
+size = Vector3(2.86047, 2.49414, 1.65363)
+script = ExtResource("5_al6o6")
+
+[node name="Sprite3D" type="Sprite3D" parent="."]
+transform = Transform3D(0.110688, -0.00611385, 0.00136134, -0.00134658, 0.000304652, 0.110857, -0.00611721, -0.110696, 0.000229906, 0.171232, 0.121119, -0.429555)
+texture = ExtResource("1_wu0ih")
+
+[node name="Candle" parent="." instance=ExtResource("6_jfu1q")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.838533, 0.097561, -0.740566)
+
+[node name="OmniLight3D" type="OmniLight3D" parent="Candle"]
+transform = Transform3D(0.913368, 0, 0.407135, 0, 1, 0, -0.407135, 0, 0.913368, -0.00690567, 0.631235, 0.00237644)
+light_energy = 1.454
+omni_range = 2.41223
+
+[node name="Label3D" type="Label3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.837454, 0.676549, 0.286752)
+visible = false
+text = "Press e"
+font = ExtResource("3_jjdrj")
+font_size = 40
+
+[connection signal="body_entered" from="Area3D" to="Table_1/CSGBox3D" method="_on_area_3d_body_entered"]
+[connection signal="body_exited" from="Area3D" to="Table_1/CSGBox3D" method="_on_area_3d_body_exited"]

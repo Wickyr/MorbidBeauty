@@ -1,4 +1,4 @@
-[gd_scene load_steps=20 format=3 uid="uid://c7ir62xhq36u"]
+[gd_scene load_steps=21 format=3 uid="uid://c7ir62xhq36u"]
 
 [ext_resource type="Script" path="res://Script/player.gd" id="1_3a2sk"]
 [ext_resource type="Script" path="res://Script/IteractCheck.gd" id="2_svqsm"]
@@ -6,6 +6,7 @@
 [ext_resource type="Texture2D" uid="uid://drklnar0bpmi4" path="res://Graphics/Player/Fleshman_3_playerUV3.png" id="3_oxsma"]
 [ext_resource type="Script" path="res://Script/Pause Menu.gd" id="5_c5ekq"]
 [ext_resource type="Texture2D" uid="uid://bq5nmmq8lfriv" path="res://icon.svg" id="6_8ipda"]
+[ext_resource type="FontFile" uid="uid://baqdtwn6u0n4o" path="res://Graphics/UI/gothic_ultra_tt.ttf" id="7_4c12o"]
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_40ox3"]
 render_priority = 0
@@ -2755,28 +2756,43 @@ scale = Vector2(9.97656, 7.39062)
 texture = ExtResource("6_8ipda")
 
 [node name="resume" type="Button" parent="Pause Menu"]
-offset_left = 441.0
-offset_top = 131.0
-offset_right = 511.0
-offset_bottom = 162.0
+offset_left = 419.0
+offset_top = 136.0
+offset_right = 508.0
+offset_bottom = 184.0
 scale = Vector2(2.81736, 2.86774)
+theme_override_fonts/font = ExtResource("7_4c12o")
+theme_override_font_sizes/font_size = 30
 text = "Resume"
 
 [node name="Menu" type="Button" parent="Pause Menu"]
-offset_left = 476.0
-offset_top = 243.0
-offset_right = 529.0
-offset_bottom = 274.0
+offset_left = 441.0
+offset_top = 301.0
+offset_right = 524.0
+offset_bottom = 349.0
 scale = Vector2(2.5775, 2.60668)
+theme_override_fonts/font = ExtResource("7_4c12o")
+theme_override_font_sizes/font_size = 30
 text = "Menu"
 
 [node name="Quit" type="Button" parent="Pause Menu"]
-offset_left = 494.0
-offset_top = 344.0
-offset_right = 536.0
-offset_bottom = 375.0
+offset_left = 477.0
+offset_top = 455.0
+offset_right = 544.0
+offset_bottom = 504.0
 scale = Vector2(2.20831, 2.13007)
+theme_override_fonts/font = ExtResource("7_4c12o")
+theme_override_font_sizes/font_size = 27
 text = "Quit"
+
+[node name="Label" type="Label" parent="Pause Menu"]
+offset_left = 431.0
+offset_top = 4.0
+offset_right = 648.0
+offset_bottom = 124.0
+theme_override_fonts/font = ExtResource("7_4c12o")
+theme_override_font_sizes/font_size = 120
+text = "Paused"
 
 [connection signal="body_entered" from="Fleshman_4/AttackArea" to="." method="_on_attack_area_body_entered"]
 [connection signal="timeout" from="Attacketime" to="." method="_on_timer_timeout"]
