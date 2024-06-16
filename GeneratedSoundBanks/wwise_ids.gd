@@ -2,34 +2,34 @@ class_name AK
 
 class EVENTS:
 
-	const RATSQUEAK = 1690196772
 	const RATDEATH = 3924734864
-	const BITE = 1645043423
-	const IDLE = 1874288895
-	const RATWALKING = 3790712335
-	const DAMAGE = 1786804762
-	const STOMP = 1166633136
+	const RATSQUEAK = 1690196772
 	const WALKING = 340271938
-	const VOICE = 3170124113
-	const WALK = 2108779966
-	const AMBIENCE = 85412153
-	const ACTIVE = 58138747
+	const RATWALKING = 3790712335
 	const CHASE = 417490929
+	const ACTIVE = 58138747
+	const DAMAGE = 1786804762
+	const VOICE = 3170124113
+	const IDLE = 1874288895
+	const BITE = 1645043423
+	const AMBIENCE = 85412153
+	const WALK = 2108779966
+	const STOMP = 1166633136
 
 	const _dict = {
-		"RatSqueak": RATSQUEAK,
 		"RatDeath": RATDEATH,
-		"Bite": BITE,
-		"Idle": IDLE,
-		"RatWalking": RATWALKING,
-		"Damage": DAMAGE,
-		"Stomp": STOMP,
+		"RatSqueak": RATSQUEAK,
 		"Walking": WALKING,
-		"Voice": VOICE,
-		"Walk": WALK,
-		"Ambience": AMBIENCE,
+		"RatWalking": RATWALKING,
+		"Chase": CHASE,
 		"Active": ACTIVE,
-		"Chase": CHASE
+		"Damage": DAMAGE,
+		"Voice": VOICE,
+		"Idle": IDLE,
+		"Bite": BITE,
+		"Ambience": AMBIENCE,
+		"Walk": WALK,
+		"Stomp": STOMP
 	}
 
 class STATES:
@@ -42,28 +42,28 @@ class SWITCHES:
 
 class GAME_PARAMETERS:
 
+	const SS_AIR_FURY = 1029930033
+	const SS_AIR_SIZE = 3074696722
 	const SS_AIR_FREEFALL = 3002758120
+	const SS_AIR_RPM = 822163944
 	const SS_AIR_PRESENCE = 3847924954
+	const SS_AIR_TURBULENCE = 4160247818
+	const SS_AIR_MONTH = 2648548617
+	const SS_AIR_STORM = 3715662592
 	const SS_AIR_TIMEOFDAY = 3203397129
 	const SS_AIR_FEAR = 1351367891
-	const SS_AIR_FURY = 1029930033
-	const SS_AIR_MONTH = 2648548617
-	const SS_AIR_TURBULENCE = 4160247818
-	const SS_AIR_RPM = 822163944
-	const SS_AIR_SIZE = 3074696722
-	const SS_AIR_STORM = 3715662592
 
 	const _dict = {
-		"SS_Air_Freefall": SS_AIR_FREEFALL,
-		"SS_Air_Presence": SS_AIR_PRESENCE,
-		"SS_Air_TimeOfDay": SS_AIR_TIMEOFDAY,
-		"SS_Air_Fear": SS_AIR_FEAR,
 		"SS_Air_Fury": SS_AIR_FURY,
-		"SS_Air_Month": SS_AIR_MONTH,
-		"SS_Air_Turbulence": SS_AIR_TURBULENCE,
-		"SS_Air_RPM": SS_AIR_RPM,
 		"SS_Air_Size": SS_AIR_SIZE,
-		"SS_Air_Storm": SS_AIR_STORM
+		"SS_Air_Freefall": SS_AIR_FREEFALL,
+		"SS_Air_RPM": SS_AIR_RPM,
+		"SS_Air_Presence": SS_AIR_PRESENCE,
+		"SS_Air_Turbulence": SS_AIR_TURBULENCE,
+		"SS_Air_Month": SS_AIR_MONTH,
+		"SS_Air_Storm": SS_AIR_STORM,
+		"SS_Air_TimeOfDay": SS_AIR_TIMEOFDAY,
+		"SS_Air_Fear": SS_AIR_FEAR
 	}
 
 class TRIGGERS:

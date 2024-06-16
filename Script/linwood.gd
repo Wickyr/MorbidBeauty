@@ -28,8 +28,6 @@ var puddle
 var footstepCooldown = 0.8  # Adjust as needed, in seconds
 var runFootstepCooldown = 0.4
 var footstepTimer = 0.0
-var tensionPlaying = false
-var chasePlaying = false 
 var gravity = ProjectSettings.get_setting("physics/3d/default_gravity")
 @onready var anim = $LinWood_1/AnimationPlayer
 @onready var fleshman_4 = $Fleshman_4
@@ -44,8 +42,7 @@ func _ready():
 	player = get_tree().get_nodes_in_group("Player")[0]
 	puddle = get_tree().get_nodes_in_group("Puddle")
 	Wwise.register_game_obj(self, self.name)
-	Wwise.set_3d_position(self, transform)
-	Wwise.post_event_id(AK.EVENTS.ACTIVE, self)
+
 
 func _physics_process(delta):
 	if not is_on_floor():
@@ -54,10 +51,6 @@ func _physics_process(delta):
 func _process(delta):
 	match currentState:
 		States.patrol:
-			if not tensionPlaying:
-				Wwise.post_event_id(AK.EVENTS.ACTIVE, self)
-				tensionPlaying = true
-				chasePlaying = false
 			if(navAgent.is_navigation_finished()):
 				currentState = States.waiting
 				patrol_timer.start()
@@ -84,10 +77,6 @@ func _process(delta):
 				Wwise.set_3d_position(self, transform)
 				Wwise.post_event_id(AK.EVENTS.WALK, self)
 				footstepTimer = 0.0  # Reset timer after playing sound
-				if not chasePlaying:
-					Wwise.post_event_id(AK.EVENTS.CHASE, self)
-					tensionPlaying = false
-					chasePlaying = true
 			else:
 				footstepTimer += delta
 			pass
