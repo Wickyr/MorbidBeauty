@@ -162,7 +162,7 @@
 				</AcousticTexture>
 			</AcousticTextures>
 		</SoundBank>
-		<SoundBank Id="3161908922" Type="User" Language="SFX" Hash="{33AC0E6B-011A-2729-495D-8F4F10EFC886}">
+		<SoundBank Id="3161908922" Type="User" Language="SFX" Hash="{B8F557FB-F08A-E0DE-FDD8-4830A3EC4AFC}">
 			<ShortName>Main</ShortName>
 			<Path>3161908922.bnk</Path>
 			<Media>
@@ -193,6 +193,10 @@
 				<File Id="99596555" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>FS3.wav</ShortName>
 					<CachePath>SFX/FS3_57A1798A.wem</CachePath>
+				</File>
+				<File Id="118301833" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Gate.wav</ShortName>
+					<CachePath>SFX/Gate_818F3B66.wem</CachePath>
 				</File>
 				<File Id="148068930" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Pain3.wav</ShortName>
@@ -286,6 +290,10 @@
 					<ShortName>FS4.wav</ShortName>
 					<CachePath>SFX/FS4_367C4DDA.wem</CachePath>
 				</File>
+				<File Id="758588823" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Muffle.wav</ShortName>
+					<CachePath>SFX/Muffle_A8B48432.wem</CachePath>
+				</File>
 				<File Id="780068149" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>RatWalk.wav</ShortName>
 					<CachePath>SFX/RatWalk_E91227F2.wem</CachePath>
@@ -302,9 +310,17 @@
 					<ShortName>BeforeEncounter.wav</ShortName>
 					<CachePath>SFX/BeforeEncounter_818F3B66.wem</CachePath>
 				</File>
+				<File Id="805956132" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Bed.wav</ShortName>
+					<CachePath>SFX/Bed_818F3B66.wem</CachePath>
+				</File>
 				<File Id="881292332" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Squeak3.wav</ShortName>
 					<CachePath>SFX/Squeak3_818F3B66.wem</CachePath>
+				</File>
+				<File Id="889771441" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>FOOT.wav</ShortName>
+					<CachePath>SFX/FOOT_1BE8BE61.wem</CachePath>
 				</File>
 				<File Id="902469787" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>LinwoodWalk1.wav</ShortName>
@@ -341,12 +357,16 @@
 			</Media>
 			<Plugins>
 				<Custom>
+					<Plugin Id="25282715" Name="Silence" LibName="Wwise Silence" LibId="6619138"/>
+					<Plugin Id="316895671" Name="Silence" LibName="Wwise Silence" LibId="6619138"/>
+					<Plugin Id="424562999" Name="Silence" LibName="Wwise Silence" LibId="6619138"/>
 					<Plugin Id="584843543" Name="Silence" LibName="Wwise Silence" LibId="6619138"/>
 					<Plugin Id="759195188" Name="Silence" LibName="Wwise Silence" LibId="6619138"/>
 					<Plugin Id="794302455" Name="RoomVerb (Custom)" LibName="Wwise RoomVerb" LibId="7733251"/>
 					<Plugin Id="1072150631" Name="Silence" LibName="Wwise Silence" LibId="6619138"/>
 				</Custom>
 				<ShareSets>
+					<Plugin Id="701863527" Name="Inside_My_Head" LibName="Wwise RoomVerb" LibId="7733251"/>
 					<Plugin Id="3290519051" Name="Aluminium_Tank" LibName="Wwise RoomVerb" LibId="7733251"/>
 					<Plugin Id="3546444380" Name="Big_Garage1" LibName="Wwise Matrix Reverb" LibId="7536643"/>
 				</ShareSets>
@@ -422,6 +442,24 @@
 					</MediaRefs>
 				</Event>
 				<Event Id="1874288895" Name="Idle"/>
+				<Event Id="1125500713" Name="Intro">
+					<MediaRefs>
+						<MediaRef Id="118301833"/>
+						<MediaRef Id="758588823"/>
+						<MediaRef Id="805956132"/>
+						<MediaRef Id="889771441"/>
+					</MediaRefs>
+					<PluginRefs>
+						<Custom>
+							<PluginRef Id="25282715"/>
+							<PluginRef Id="316895671"/>
+							<PluginRef Id="424562999"/>
+						</Custom>
+						<ShareSets>
+							<PluginRef Id="701863527"/>
+						</ShareSets>
+					</PluginRefs>
+				</Event>
 				<Event Id="3229313568" Name="Moan">
 					<MediaRefs>
 						<MediaRef Id="329823285"/>
@@ -520,5 +558,5 @@
 			</Events>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{A936D9DE-9C53-31ED-12AB-8A76323F35E8}</FileHash>
+	<FileHash>{70E96A66-FBCA-4554-EE77-C35E101899A5}</FileHash>
 </SoundBanksInfo>

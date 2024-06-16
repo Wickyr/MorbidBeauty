@@ -22,6 +22,7 @@ class EVENTS:
 	const MUSIC = 3991942870
 	const RATKILL = 986307634
 	const DEATH = 779278001
+	const INTRO = 1125500713
 	const ROCKSCRUMBLING = 2691985942
 	const PUDDLE = 2003927601
 
@@ -46,6 +47,7 @@ class EVENTS:
 		"Music": MUSIC,
 		"RatKill": RATKILL,
 		"Death": DEATH,
+		"Intro": INTRO,
 		"RocksCrumbling": ROCKSCRUMBLING,
 		"Puddle": PUDDLE
 	}

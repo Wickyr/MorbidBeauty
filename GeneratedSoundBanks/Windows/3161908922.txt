@@ -8,6 +8,7 @@ Event	ID	Name			Wwise Object Path	Notes
 	779278001	Death			\Default Work Unit\Player\Death	
 	849560917	Note			\Default Work Unit\Environment\Note	
 	986307634	RatKill			\Default Work Unit\Linwood\RatKill	
+	1125500713	Intro			\Default Work Unit\Environment\Intro	
 	1166633136	Stomp			\Default Work Unit\Player\Stomp	
 	1645043423	Bite			\Default Work Unit\Rat\Bite	
 	1690196772	RatSqueak			\Default Work Unit\Rat\RatSqueak	
@@ -23,11 +24,15 @@ Event	ID	Name			Wwise Object Path	Notes
 	3991942870	Music			\Default Work Unit\Environment\Music	
 
 Effect plug-ins	ID	Name	Type				Notes
+	701863527	Inside_My_Head	Wwise RoomVerb			
 	794302455	RoomVerb (Custom)	Wwise RoomVerb			
 	3290519051	Aluminium_Tank	Wwise RoomVerb			
 	3546444380	Big_Garage1	Wwise Matrix Reverb			
 
 Source plug-ins	ID	Name	Type		Wwise Object Path	Notes
+	25282715	Silence	Wwise Silence		\Actor-Mixer Hierarchy\Default Work Unit\Intro\GetUp\Silence_01\Silence	
+	316895671	Silence	Wwise Silence		\Actor-Mixer Hierarchy\Default Work Unit\Intro\Gate\Silence\Silence	
+	424562999	Silence	Wwise Silence		\Actor-Mixer Hierarchy\Default Work Unit\Intro\GetUp\Silence\Silence	
 	584843543	Silence	Wwise Silence		\Actor-Mixer Hierarchy\Default Work Unit\Environment\Moans\Silence\Silence	
 	759195188	Silence	Wwise Silence		\Actor-Mixer Hierarchy\Default Work Unit\Rat\Bites\Silence\Silence	
 	1072150631	Silence	Wwise Silence		\Actor-Mixer Hierarchy\Default Work Unit\Player\Fall\Silence\Silence	
@@ -40,6 +45,7 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	95847362	Thud	C:\Users\jlutt\Documents\WwiseProjects\MorbidBeauty\.cache\Windows\SFX\Thud_FE7DE1CB.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\Fall\Thud		216672
 	95967880	Attack	C:\Users\jlutt\Documents\WwiseProjects\MorbidBeauty\.cache\Windows\SFX\Bones_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\Linwood\Attack		131224
 	99596555	FS3	C:\Users\jlutt\Documents\WwiseProjects\MorbidBeauty\.cache\Windows\SFX\FS3_57A1798A.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\Footsteps\FS3		50116
+	118301833	Door	C:\Users\jlutt\Documents\WwiseProjects\MorbidBeauty\.cache\Windows\SFX\Gate_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\Intro\Gate\Door		414816
 	148068930	Pain2	C:\Users\jlutt\Documents\WwiseProjects\MorbidBeauty\.cache\Windows\SFX\Pain3_B44857A0.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\Pain\Pain2		111936
 	191555762	Rocks	C:\Users\jlutt\Documents\WwiseProjects\MorbidBeauty\.cache\Windows\SFX\Rocks_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\Environment\Rocks		610656
 	209224562	RatWalk_01	C:\Users\jlutt\Documents\WwiseProjects\MorbidBeauty\.cache\Windows\SFX\RatWalk_059A9573.wem		\Actor-Mixer Hierarchy\Default Work Unit\Rat\RatWalking\RatWalk_01		28000
@@ -63,11 +69,14 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	682298366	Squeak1	C:\Users\jlutt\Documents\WwiseProjects\MorbidBeauty\.cache\Windows\SFX\Squeak1_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\Rat\Squeaks\Squeak1		92392
 	702823241	Boom	C:\Users\jlutt\Documents\WwiseProjects\MorbidBeauty\.cache\Windows\SFX\Boom_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\Linwood\Boom		437856
 	720736340	FS4	C:\Users\jlutt\Documents\WwiseProjects\MorbidBeauty\.cache\Windows\SFX\FS4_367C4DDA.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\Footsteps\FS4		51568
+	758588823	MuffleVoice	C:\Users\jlutt\Documents\WwiseProjects\MorbidBeauty\.cache\Windows\SFX\Muffle_A8B48432.wem		\Actor-Mixer Hierarchy\Default Work Unit\Intro\MuffleVoice		1808736
 	780068149	RatWalk_02	C:\Users\jlutt\Documents\WwiseProjects\MorbidBeauty\.cache\Windows\SFX\RatWalk_E91227F2.wem		\Actor-Mixer Hierarchy\Default Work Unit\Rat\RatWalking\RatWalk_02		32672
 	798476568	Squeak2	C:\Users\jlutt\Documents\WwiseProjects\MorbidBeauty\.cache\Windows\SFX\Squeak2_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\Rat\Squeaks\Squeak2		87836
 	799628173	Pain3	C:\Users\jlutt\Documents\WwiseProjects\MorbidBeauty\.cache\Windows\SFX\Pain4_3C34F2EA.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\Pain\Pain3		44524
 	804822220	Tension	C:\Users\jlutt\Documents\WwiseProjects\MorbidBeauty\.cache\Windows\SFX\BeforeEncounter_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\Linwood\Tension		13759360
+	805956132	Bed	C:\Users\jlutt\Documents\WwiseProjects\MorbidBeauty\.cache\Windows\SFX\Bed_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\Intro\GetUp\Bed		114090
 	881292332	Squeak3	C:\Users\jlutt\Documents\WwiseProjects\MorbidBeauty\.cache\Windows\SFX\Squeak3_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\Rat\Squeaks\Squeak3		149368
+	889771441	Footsteps	C:\Users\jlutt\Documents\WwiseProjects\MorbidBeauty\.cache\Windows\SFX\FOOT_1BE8BE61.wem		\Actor-Mixer Hierarchy\Default Work Unit\Intro\Footsteps		2470796
 	902469787	LinwoodWalk1	C:\Users\jlutt\Documents\WwiseProjects\MorbidBeauty\.cache\Windows\SFX\LinwoodWalk1_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\Linwood\Footsteps\LinwoodWalk1		125480
 	925896026	LinwoodWalk2	C:\Users\jlutt\Documents\WwiseProjects\MorbidBeauty\.cache\Windows\SFX\LinwoodWalk2_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\Linwood\Walking\LinwoodWalk2		123452
 	926262678	Death	C:\Users\jlutt\Documents\WwiseProjects\MorbidBeauty\.cache\Windows\SFX\Rat4_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\Rat\Death		146496
