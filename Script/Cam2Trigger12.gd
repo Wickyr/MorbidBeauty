@@ -2,8 +2,10 @@ extends Area3D
 
 @onready var cam_10 = $"../../Cams/Cam10"
 @onready var cam_8 = $"../../Cams/Cam8"
+@onready var ak_listener_3d = $"../../Audio/AkListener3D"
 
 func _on_body_entered(body):
 	if "Player" in body.name:
 		cam_8.current = true
 		cam_10.current = false
+		ak_listener_3d.position = cam_8.global_position

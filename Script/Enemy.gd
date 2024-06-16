@@ -22,6 +22,8 @@ var PlayerEarShotFar : bool
 var PlayerEarShotClose : bool
 var PlayerSightFar : bool
 var PlayerSightClose : bool
+var footstepCooldown = 0.3  # Adjust as needed, in seconds
+var footstepTimer = 0.0
 
 var gravity = ProjectSettings.get_setting("physics/3d/default_gravity")
 @export var dead : bool
@@ -52,9 +54,17 @@ func _process(delta):
 				currentState = States.waiting
 				patrol_timer.start()
 				anim.play("Idle")
+				Wwise.set_3d_position(self, transform)
+				Wwise.post_event_id(AK.EVENTS.RATSQUEAK, self)
 				return
 			MoveTowardPoint(delta, patrolspeed)
 			anim.play("Run")
+			if footstepTimer >= footstepCooldown:
+				Wwise.set_3d_position(self, transform)
+				Wwise.post_event_id(AK.EVENTS.RATWALKING, self)
+				footstepTimer = 0.0  # Reset timer after playing sound
+			else:
+				footstepTimer += delta
 			anim.speed_scale = 1
 			pass
 		States.chasing:
@@ -189,11 +199,13 @@ func _on_attack_area_body_exited(body):
 func _on_attack_t_imer_timeout():
 	timer.start()
 	anim.play("Attack")
+	Wwise.set_3d_position(self, transform)
 	Wwise.post_event_id(AK.EVENTS.BITE, self)
 	anim.speed_scale = 1
 			
 func _on_timer_timeout():
 	if attack == true:
 		player.health = player.health - 3
+		Wwise.set_3d_position(self, transform)
 		Wwise.post_event_id(AK.EVENTS.DAMAGE, self)
 		chasespeed = 5

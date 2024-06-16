@@ -13,11 +13,6 @@ Event	ID	Name			Wwise Object Path	Notes
 	3790712335	RatWalking			\Default Work Unit\Rat\RatWalking	
 	3924734864	RatDeath			\Default Work Unit\Rat\RatDeath	
 
-Effect plug-ins	ID	Name	Type				Notes
-	602546716	Room_Large	Wwise RoomVerb			
-	1990128658	Room_Medium	Wwise RoomVerb			
-	3701691487	Hall_Large_Bright	Wwise RoomVerb			
-
 Source plug-ins	ID	Name	Type		Wwise Object Path	Notes
 	759195188	Silence	Wwise Silence		\Actor-Mixer Hierarchy\Default Work Unit\Rat\Bites\Silence\Silence	
 
@@ -38,7 +33,7 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	432474786	Drag	C:\Users\jlutt\Documents\WwiseProjects\MorbidBeauty\.cache\Windows\SFX\Drag_FD86A6DC.wem		\Actor-Mixer Hierarchy\Default Work Unit\Linwood\Drag		226096
 	497860259	FS2	C:\Users\jlutt\Documents\WwiseProjects\MorbidBeauty\.cache\Windows\SFX\FS2_90E88873.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\Footsteps\FS2		50116
 	636040739	Splat	C:\Users\jlutt\Documents\WwiseProjects\MorbidBeauty\.cache\Windows\SFX\Splat_97A4DAE6.wem		\Actor-Mixer Hierarchy\Default Work Unit\Rat\Splat		55348
-	653906428	Ambience1	C:\Users\jlutt\Documents\WwiseProjects\MorbidBeauty\.cache\Windows\SFX\GeneralAmbience_50BC6CB7.wem		\Actor-Mixer Hierarchy\Default Work Unit\Environment\Ambience\Ambience1		12394176
+	653906428	Ambience1	C:\Users\jlutt\Documents\WwiseProjects\MorbidBeauty\.cache\Windows\SFX\GeneralAmbience_5C9831CC.wem		\Actor-Mixer Hierarchy\Default Work Unit\Environment\Ambience\Ambience1		12394176
 	682298366	Squeak1	C:\Users\jlutt\Documents\WwiseProjects\MorbidBeauty\.cache\Windows\SFX\Squeak1_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\Rat\Squeaks\Squeak1		92392
 	720736340	FS4	C:\Users\jlutt\Documents\WwiseProjects\MorbidBeauty\.cache\Windows\SFX\FS4_367C4DDA.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\Footsteps\FS4		51568
 	780068149	RatWalk_02	C:\Users\jlutt\Documents\WwiseProjects\MorbidBeauty\.cache\Windows\SFX\RatWalk_E91227F2.wem		\Actor-Mixer Hierarchy\Default Work Unit\Rat\RatWalking\RatWalk_02		32672

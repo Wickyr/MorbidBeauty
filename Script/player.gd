@@ -111,6 +111,8 @@ func _on_attack_area_body_entered(body):
 			var Splatter = Spawn.instantiate()
 			add_sibling(Splatter)
 			Splatter.position = foot.global_position
+			Wwise.set_3d_position(self, transform)
+			Wwise.post_event_id(AK.EVENTS.RATDEATH, self)
 			
 func _on_timer_timeout():
 	attacking = false

@@ -42,8 +42,9 @@ func _ready():
 	player = get_tree().get_nodes_in_group("Player")[0]
 	puddle = get_tree().get_nodes_in_group("Puddle")
 	Wwise.register_game_obj(self, self.name)
-
-
+	Wwise.set_3d_position(self, transform)
+	Wwise.post_event_id(AK.EVENTS.ACTIVE, self)
+	
 func _physics_process(delta):
 	if not is_on_floor():
 		velocity.y -= gravity * delta
