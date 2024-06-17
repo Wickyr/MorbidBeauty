@@ -1,8 +1,9 @@
-[gd_scene load_steps=7 format=3 uid="uid://cel6o82yerraa"]
+[gd_scene load_steps=8 format=3 uid="uid://cel6o82yerraa"]
 
 [ext_resource type="Texture2D" uid="uid://bfwog275vyt27" path="res://Graphics/Env/templefloor7.png" id="1_gqq86"]
 [ext_resource type="FontFile" uid="uid://baqdtwn6u0n4o" path="res://Graphics/UI/gothic_ultra_tt.ttf" id="2_mt5vj"]
 [ext_resource type="Script" path="res://Script/End.gd" id="3_rmtgd"]
+[ext_resource type="Script" path="res://Scenes/IntroMusic.gd" id="4_deacr"]
 
 [sub_resource type="Animation" id="Animation_qybpq"]
 resource_name = "Intro"
@@ -127,3 +128,8 @@ text = "By the Lost Developers"
 
 [node name="End" type="Node2D" parent="."]
 script = ExtResource("3_rmtgd")
+
+[node name="Audio" type="Node" parent="."]
+script = ExtResource("4_deacr")
+
+[node name="AkListener3D" type="AkListener3D" parent="Audio"]
