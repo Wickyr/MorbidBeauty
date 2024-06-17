@@ -1,9 +1,8 @@
-[gd_scene load_steps=8 format=3 uid="uid://bvttv7ll1dxb7"]
+[gd_scene load_steps=7 format=3 uid="uid://bvttv7ll1dxb7"]
 
 [ext_resource type="Texture2D" uid="uid://dfiwk3fjg4ff1" path="res://Graphics/Rat/Dead Rat.png" id="1_cvqpv"]
 [ext_resource type="FontFile" uid="uid://baqdtwn6u0n4o" path="res://Graphics/UI/gothic_ultra_tt.ttf" id="2_2d380"]
 [ext_resource type="Script" path="res://Script/End Credits.gd" id="3_v71au"]
-[ext_resource type="Script" path="res://Scenes/CreditsTheme.gd" id="4_4cs5s"]
 
 [sub_resource type="Animation" id="Animation_ew1b1"]
 resource_name = "Credits"
@@ -130,6 +129,3 @@ text = "                    A game by
 
 [node name="End Credits" type="Node2D" parent="."]
 script = ExtResource("3_v71au")
-
-[node name="Audio" type="Node" parent="."]
-script = ExtResource("4_4cs5s")
