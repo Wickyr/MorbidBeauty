@@ -1,8 +1,8 @@
 extends Node3D
 var toggle = false
 var interactable = true
-@onready var Note = $"../Notes/Sprite2D"
 @onready var pree_e = $"../../Label3D"
+@onready var Note = $"../../Notes/Sprite2D"
 
 
 func interact():
