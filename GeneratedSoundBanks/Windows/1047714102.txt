@@ -1,0 +1,23 @@
+Event	ID	Name			Wwise Object Path	Notes
+	1645043423	Bite			\Default Work Unit\Rat\Bite	
+	1690196772	RatSqueak			\Default Work Unit\Rat\RatSqueak	
+	3790712335	RatWalking			\Default Work Unit\Rat\RatWalking	
+	3924734864	RatDeath			\Default Work Unit\Rat\RatDeath	
+
+Source plug-ins	ID	Name	Type		Wwise Object Path	Notes
+	759195188	Silence	Wwise Silence		\Actor-Mixer Hierarchy\Default Work Unit\Rat\Bites\Silence\Silence	
+
+In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	40301477	Rat1	C:\Users\jlutt\Documents\WwiseProjects\MorbidBeauty\.cache\Windows\SFX\Rat1_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\Rat\Bites\Rat1		84900
+	85423154	RatWalk_03	C:\Users\jlutt\Documents\WwiseProjects\MorbidBeauty\.cache\Windows\SFX\RatWalk_0027BBBF.wem		\Actor-Mixer Hierarchy\Default Work Unit\Rat\RatWalking\RatWalk_03		40668
+	209224562	RatWalk_01	C:\Users\jlutt\Documents\WwiseProjects\MorbidBeauty\.cache\Windows\SFX\RatWalk_059A9573.wem		\Actor-Mixer Hierarchy\Default Work Unit\Rat\RatWalking\RatWalk_01		28000
+	220336238	Rat2	C:\Users\jlutt\Documents\WwiseProjects\MorbidBeauty\.cache\Windows\SFX\Rat2_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\Rat\Bites\Rat2		90256
+	237375162	RatWalk_04	C:\Users\jlutt\Documents\WwiseProjects\MorbidBeauty\.cache\Windows\SFX\RatWalk_3F96EDB6.wem		\Actor-Mixer Hierarchy\Default Work Unit\Rat\RatWalking\RatWalk_04		51828
+	378869427	Rat3	C:\Users\jlutt\Documents\WwiseProjects\MorbidBeauty\.cache\Windows\SFX\Rat34_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\Rat\Bites\Rat3		84008
+	636040739	Splat	C:\Users\jlutt\Documents\WwiseProjects\MorbidBeauty\.cache\Windows\SFX\Splat_97A4DAE6.wem		\Actor-Mixer Hierarchy\Default Work Unit\Rat\Splat		55348
+	682298366	Squeak1	C:\Users\jlutt\Documents\WwiseProjects\MorbidBeauty\.cache\Windows\SFX\Squeak1_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\Rat\Squeaks\Squeak1		92392
+	780068149	RatWalk_02	C:\Users\jlutt\Documents\WwiseProjects\MorbidBeauty\.cache\Windows\SFX\RatWalk_E91227F2.wem		\Actor-Mixer Hierarchy\Default Work Unit\Rat\RatWalking\RatWalk_02		32672
+	798476568	Squeak2	C:\Users\jlutt\Documents\WwiseProjects\MorbidBeauty\.cache\Windows\SFX\Squeak2_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\Rat\Squeaks\Squeak2		87836
+	881292332	Squeak3	C:\Users\jlutt\Documents\WwiseProjects\MorbidBeauty\.cache\Windows\SFX\Squeak3_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\Rat\Squeaks\Squeak3		149368
+	926262678	Death	C:\Users\jlutt\Documents\WwiseProjects\MorbidBeauty\.cache\Windows\SFX\Rat4_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\Rat\Death		146496
+
