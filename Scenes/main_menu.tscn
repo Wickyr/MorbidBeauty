@@ -1,4 +1,4 @@
-[gd_scene load_steps=70 format=3 uid="uid://fh6niet4qohm"]
+[gd_scene load_steps=69 format=3 uid="uid://fh6niet4qohm"]
 
 [ext_resource type="Script" path="res://Script/main_menu.gd" id="1_epbtb"]
 [ext_resource type="FontFile" uid="uid://baqdtwn6u0n4o" path="res://Graphics/UI/gothic_ultra_tt.ttf" id="3_4sotl"]
@@ -6,7 +6,6 @@
 [ext_resource type="Texture2D" uid="uid://c8uafxtbmgsq5" path="res://Textures/Floor.png" id="5_svl07"]
 [ext_resource type="Texture2D" uid="uid://dq2kex3sycng7" path="res://Graphics/Env/templefloor8.png" id="6_0jpa5"]
 [ext_resource type="Texture2D" uid="uid://b7n8nibm0vmi5" path="res://Textures/Floor2.png" id="7_dq4rw"]
-[ext_resource type="Script" path="res://Scenes/Rocks.gd" id="8_qgt5s"]
 [ext_resource type="Texture2D" uid="uid://7inrh8nwagfp" path="res://Textures/Wall2.png" id="9_wq5k1"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_amdbg"]
@@ -739,7 +738,6 @@ size = Vector3(1.73438, 1, 13.2212)
 material = SubResource("StandardMaterial3D_4hx04")
 
 [node name="Sound" type="Node" parent="Greyboxing/Room4/CSGBox3D33"]
-script = ExtResource("8_qgt5s")
 
 [node name="CSGBox3D34" type="CSGBox3D" parent="Greyboxing/Room4"]
 transform = Transform3D(-0.999988, 0, 0.004887, 0, 1, 0, -0.004887, 0, -0.999988, -13.9307, -1.13633, 67.5544)
