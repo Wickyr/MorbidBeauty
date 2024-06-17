@@ -1,4 +1,4 @@
-[gd_scene load_steps=8 format=3 uid="uid://itu3h4htfx8a"]
+[gd_scene load_steps=8 format=3 uid="uid://cs548bfgqv2cq"]
 
 [ext_resource type="FontFile" uid="uid://cw7l6e5x6thbe" path="res://Graphics/UI/myscars_tt.ttf" id="2_2kgyp"]
 [ext_resource type="PackedScene" uid="uid://dnqdbvojf04sk" path="res://Graphics/Env/Table_1.glb" id="3_cseol"]
@@ -35,26 +35,25 @@ theme_override_colors/font_color = Color(0.214589, 2.99313e-07, 0.0100157, 1)
 theme_override_fonts/font = ExtResource("2_2kgyp")
 theme_override_font_sizes/font_size = 40
 text = "Entry 3 From Linwood 
-	That… 
-that was not what I expected. 
-It was grotesque, twisted. 
-No god would make that.
- These are not what I thought. 
-These are monsters, not our saviors.
- I think they saw my disgust. 
-They acted differently after I saw it. 
-I don’t know if I can leave. 
-I just wanted to save us. 
-
-
-
-I just wanted to help save us.
-
-
-
+	That... was far from what 
+I anticipated. It was grotesque,
+ a thing of twisted form. 
+Its arms, by heaven, its arms. 
+No deity could fashion such an 
+abomination. These beings are not 
+what I envisioned. They are monsters, 
+not our redeemers. I fear they 
+sensed my revulsion. Their demeanor
+ towards me has shifted since my 
+witnessing of it. I am uncertain if
+ departure remains an option. 
+My sole desire was to save us. 
+My sole intent was to aid in
+ our salvation.
 "
 
 [node name="Label2" type="Label" parent="Notes/Sprite2D"]
+visible = false
 offset_left = -311.039
 offset_top = 156.79
 offset_right = 14832.0
