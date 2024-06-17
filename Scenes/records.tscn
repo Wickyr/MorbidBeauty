@@ -1,4 +1,4 @@
-[gd_scene load_steps=7 format=3 uid="uid://bdu660wrhledf"]
+[gd_scene load_steps=7 format=3 uid="uid://byy642o1qmrno"]
 
 [ext_resource type="Texture2D" uid="uid://b1pibghdkn0am" path="res://Graphics/Env/page_2.png" id="1_wu0ih"]
 [ext_resource type="FontFile" uid="uid://baqdtwn6u0n4o" path="res://Graphics/UI/gothic_ultra_tt.ttf" id="3_jjdrj"]

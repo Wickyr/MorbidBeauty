@@ -162,7 +162,7 @@
 				</AcousticTexture>
 			</AcousticTextures>
 		</SoundBank>
-		<SoundBank Id="3161908922" Type="User" Language="SFX" Hash="{B8F557FB-F08A-E0DE-FDD8-4830A3EC4AFC}">
+		<SoundBank Id="3161908922" Type="User" Language="SFX" Hash="{E8F14FC7-DB89-DAE7-93C3-D6BEDEF4D054}">
 			<ShortName>Main</ShortName>
 			<Path>3161908922.bnk</Path>
 			<Media>
@@ -184,7 +184,7 @@
 				</File>
 				<File Id="95847362" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Thud.wav</ShortName>
-					<CachePath>SFX/Thud_FE7DE1CB.wem</CachePath>
+					<CachePath>SFX/Thud_4A8C16B7.wem</CachePath>
 				</File>
 				<File Id="95967880" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Bones.wav</ShortName>
@@ -212,15 +212,11 @@
 				</File>
 				<File Id="211183777" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Contain.wav</ShortName>
-					<CachePath>SFX/Contain_52ACB938.wem</CachePath>
+					<CachePath>SFX/Contain_518BFCEC.wem</CachePath>
 				</File>
 				<File Id="220336238" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Rat2.wav</ShortName>
 					<CachePath>SFX/Rat2_818F3B66.wem</CachePath>
-				</File>
-				<File Id="225894658" Language="SFX" Streaming="false" Location="Memory">
-					<ShortName>Pain2.wav</ShortName>
-					<CachePath>SFX/Pain2_818F3B66.wem</CachePath>
 				</File>
 				<File Id="237375162" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>RatWalk.wav</ShortName>
@@ -244,7 +240,7 @@
 				</File>
 				<File Id="304254789" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Smash.wav</ShortName>
-					<CachePath>SFX/Smash_8109F552.wem</CachePath>
+					<CachePath>SFX/Smash_9499316C.wem</CachePath>
 				</File>
 				<File Id="329411520" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>LinwoodWalk4.wav</ShortName>
@@ -292,7 +288,7 @@
 				</File>
 				<File Id="758588823" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Muffle.wav</ShortName>
-					<CachePath>SFX/Muffle_A8B48432.wem</CachePath>
+					<CachePath>SFX/Muffle_924B9938.wem</CachePath>
 				</File>
 				<File Id="780068149" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>RatWalk.wav</ShortName>
@@ -320,7 +316,7 @@
 				</File>
 				<File Id="889771441" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>FOOT.wav</ShortName>
-					<CachePath>SFX/FOOT_1BE8BE61.wem</CachePath>
+					<CachePath>SFX/FOOT_36CF13D4.wem</CachePath>
 				</File>
 				<File Id="902469787" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>LinwoodWalk1.wav</ShortName>
@@ -416,7 +412,6 @@
 				<Event Id="1786804762" Name="Damage">
 					<MediaRefs>
 						<MediaRef Id="148068930"/>
-						<MediaRef Id="225894658"/>
 						<MediaRef Id="799628173"/>
 					</MediaRefs>
 				</Event>
@@ -558,5 +553,5 @@
 			</Events>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{70E96A66-FBCA-4554-EE77-C35E101899A5}</FileHash>
+	<FileHash>{D665CC14-A4AE-1116-A398-3D84113846B7}</FileHash>
 </SoundBanksInfo>
