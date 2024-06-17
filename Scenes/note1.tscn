@@ -1,4 +1,4 @@
-[gd_scene load_steps=8 format=3 uid="uid://svsjvyf7xjx7"]
+[gd_scene load_steps=8 format=3 uid="uid://ps3whesbr8ub"]
 
 [ext_resource type="Texture2D" uid="uid://bdvp7nfrppolh" path="res://Graphics/Env/page_1.png" id="1_xnhec"]
 [ext_resource type="FontFile" uid="uid://cw7l6e5x6thbe" path="res://Graphics/UI/myscars_tt.ttf" id="2_r8mmf"]
@@ -69,9 +69,11 @@ texture = ExtResource("1_xnhec")
 
 [node name="Candle" parent="." instance=ExtResource("5_sg5d0")]
 transform = Transform3D(0.913368, 0, -0.407135, 0, 1, 0, 0.407135, 0, 0.913368, -0.916226, 0.111178, -0.407298)
+visible = false
 
 [node name="OmniLight3D" type="OmniLight3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.923501, 0.742413, -0.407939)
+visible = false
 light_energy = 1.454
 omni_range = 2.41223
 
