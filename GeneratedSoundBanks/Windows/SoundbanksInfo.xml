@@ -9,6 +9,198 @@
 	</RootPaths>
 	<DialogueEvents/>
 	<SoundBanks>
+		<SoundBank Id="1047714102" Type="User" Language="SFX" Hash="{DEA9A9B0-E29F-FB7A-3269-923C24ACA69F}">
+			<ShortName>Rat</ShortName>
+			<Path>1047714102.bnk</Path>
+			<Media>
+				<File Id="40301477" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Rat1.wav</ShortName>
+					<CachePath>SFX/Rat1_818F3B66.wem</CachePath>
+				</File>
+				<File Id="85423154" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>RatWalk.wav</ShortName>
+					<CachePath>SFX/RatWalk_0027BBBF.wem</CachePath>
+				</File>
+				<File Id="209224562" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>RatWalk.wav</ShortName>
+					<CachePath>SFX/RatWalk_059A9573.wem</CachePath>
+				</File>
+				<File Id="220336238" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Rat2.wav</ShortName>
+					<CachePath>SFX/Rat2_818F3B66.wem</CachePath>
+				</File>
+				<File Id="237375162" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>RatWalk.wav</ShortName>
+					<CachePath>SFX/RatWalk_3F96EDB6.wem</CachePath>
+				</File>
+				<File Id="378869427" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Rat34.wav</ShortName>
+					<CachePath>SFX/Rat34_818F3B66.wem</CachePath>
+				</File>
+				<File Id="636040739" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Splat.wav</ShortName>
+					<CachePath>SFX/Splat_97A4DAE6.wem</CachePath>
+				</File>
+				<File Id="682298366" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Squeak1.wav</ShortName>
+					<CachePath>SFX/Squeak1_818F3B66.wem</CachePath>
+				</File>
+				<File Id="780068149" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>RatWalk.wav</ShortName>
+					<CachePath>SFX/RatWalk_E91227F2.wem</CachePath>
+				</File>
+				<File Id="798476568" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Squeak2.wav</ShortName>
+					<CachePath>SFX/Squeak2_818F3B66.wem</CachePath>
+				</File>
+				<File Id="881292332" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Squeak3.wav</ShortName>
+					<CachePath>SFX/Squeak3_818F3B66.wem</CachePath>
+				</File>
+				<File Id="926262678" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Rat4.wav</ShortName>
+					<CachePath>SFX/Rat4_818F3B66.wem</CachePath>
+				</File>
+			</Media>
+			<Plugins>
+				<Custom>
+					<Plugin Id="759195188" Name="Silence" LibName="Wwise Silence" LibId="6619138"/>
+				</Custom>
+			</Plugins>
+			<Events>
+				<Event Id="1645043423" Name="Bite">
+					<MediaRefs>
+						<MediaRef Id="40301477"/>
+						<MediaRef Id="220336238"/>
+						<MediaRef Id="378869427"/>
+					</MediaRefs>
+					<PluginRefs>
+						<Custom>
+							<PluginRef Id="759195188"/>
+						</Custom>
+					</PluginRefs>
+				</Event>
+				<Event Id="3924734864" Name="RatDeath">
+					<MediaRefs>
+						<MediaRef Id="636040739"/>
+						<MediaRef Id="926262678"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="1690196772" Name="RatSqueak">
+					<MediaRefs>
+						<MediaRef Id="682298366"/>
+						<MediaRef Id="798476568"/>
+						<MediaRef Id="881292332"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="3790712335" Name="RatWalking">
+					<MediaRefs>
+						<MediaRef Id="85423154"/>
+						<MediaRef Id="209224562"/>
+						<MediaRef Id="237375162"/>
+						<MediaRef Id="780068149"/>
+					</MediaRefs>
+				</Event>
+			</Events>
+		</SoundBank>
+		<SoundBank Id="1069431850" Type="User" Language="SFX" Hash="{890E6ADA-D941-54DA-1871-CF4450B8734E}">
+			<ShortName>Player</ShortName>
+			<Path>1069431850.bnk</Path>
+			<Media>
+				<File Id="47047321" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Splash1.wav</ShortName>
+					<CachePath>SFX/Splash1_818F3B66.wem</CachePath>
+				</File>
+				<File Id="95847362" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Thud.wav</ShortName>
+					<CachePath>SFX/Thud_4A8C16B7.wem</CachePath>
+				</File>
+				<File Id="99596555" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>FS3.wav</ShortName>
+					<CachePath>SFX/FS3_57A1798A.wem</CachePath>
+				</File>
+				<File Id="148068930" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Pain3.wav</ShortName>
+					<CachePath>SFX/Pain3_B44857A0.wem</CachePath>
+				</File>
+				<File Id="279446680" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Splash2.wav</ShortName>
+					<CachePath>SFX/Splash2_818F3B66.wem</CachePath>
+				</File>
+				<File Id="497860259" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>FS2.wav</ShortName>
+					<CachePath>SFX/FS2_90E88873.wem</CachePath>
+				</File>
+				<File Id="636040739" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Splat.wav</ShortName>
+					<CachePath>SFX/Splat_97A4DAE6.wem</CachePath>
+				</File>
+				<File Id="720736340" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>FS4.wav</ShortName>
+					<CachePath>SFX/FS4_367C4DDA.wem</CachePath>
+				</File>
+				<File Id="799628173" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Pain4.wav</ShortName>
+					<CachePath>SFX/Pain4_3C34F2EA.wem</CachePath>
+				</File>
+				<File Id="939133334" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Stomp.wav</ShortName>
+					<CachePath>SFX/Stomp_818F3B66.wem</CachePath>
+				</File>
+				<File Id="962155194" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Death.wav</ShortName>
+					<CachePath>SFX/Death_818F3B66.wem</CachePath>
+				</File>
+				<File Id="992153646" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>FS1.wav</ShortName>
+					<CachePath>SFX/FS1_F2862A00.wem</CachePath>
+				</File>
+			</Media>
+			<Plugins>
+				<Custom>
+					<Plugin Id="1072150631" Name="Silence" LibName="Wwise Silence" LibId="6619138"/>
+				</Custom>
+			</Plugins>
+			<Events>
+				<Event Id="1786804762" Name="Damage">
+					<MediaRefs>
+						<MediaRef Id="148068930"/>
+						<MediaRef Id="799628173"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="779278001" Name="Death">
+					<MediaRefs>
+						<MediaRef Id="95847362"/>
+						<MediaRef Id="636040739"/>
+						<MediaRef Id="962155194"/>
+					</MediaRefs>
+					<PluginRefs>
+						<Custom>
+							<PluginRef Id="1072150631"/>
+						</Custom>
+					</PluginRefs>
+				</Event>
+				<Event Id="2003927601" Name="Puddle">
+					<MediaRefs>
+						<MediaRef Id="47047321"/>
+						<MediaRef Id="279446680"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="1166633136" Name="Stomp">
+					<MediaRefs>
+						<MediaRef Id="939133334"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="340271938" Name="Walking">
+					<MediaRefs>
+						<MediaRef Id="99596555"/>
+						<MediaRef Id="497860259"/>
+						<MediaRef Id="720736340"/>
+						<MediaRef Id="992153646"/>
+					</MediaRefs>
+				</Event>
+			</Events>
+		</SoundBank>
 		<SoundBank Id="1355168291" Type="User" Language="SFX" Hash="{016D3D9F-1DF4-9E68-9239-99A5D541F20F}">
 			<ShortName>Init</ShortName>
 			<Path>1355168291.bnk</Path>
@@ -162,33 +354,13 @@
 				</AcousticTexture>
 			</AcousticTextures>
 		</SoundBank>
-		<SoundBank Id="3161908922" Type="User" Language="SFX" Hash="{0052D5EA-A2D3-BF0D-74AB-04F68B8F39AE}">
+		<SoundBank Id="3161908922" Type="User" Language="SFX" Hash="{FF60B4C6-00A7-1F11-FD7F-3271B4B2F1EC}">
 			<ShortName>Main</ShortName>
 			<Path>3161908922.bnk</Path>
 			<Media>
-				<File Id="40301477" Language="SFX" Streaming="false" Location="Memory">
-					<ShortName>Rat1.wav</ShortName>
-					<CachePath>SFX/Rat1_818F3B66.wem</CachePath>
-				</File>
-				<File Id="47047321" Language="SFX" Streaming="false" Location="Memory">
-					<ShortName>Splash1.wav</ShortName>
-					<CachePath>SFX/Splash1_818F3B66.wem</CachePath>
-				</File>
 				<File Id="79304739" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>BeforeEncounter.wav</ShortName>
-					<CachePath>SFX/BeforeEncounter_F3C9E305.wem</CachePath>
-				</File>
-				<File Id="85423154" Language="SFX" Streaming="false" Location="Memory">
-					<ShortName>RatWalk.wav</ShortName>
-					<CachePath>SFX/RatWalk_0027BBBF.wem</CachePath>
-				</File>
-				<File Id="95847362" Language="SFX" Streaming="false" Location="Memory">
-					<ShortName>Thud.wav</ShortName>
-					<CachePath>SFX/Thud_4A8C16B7.wem</CachePath>
-				</File>
-				<File Id="99596555" Language="SFX" Streaming="false" Location="Memory">
-					<ShortName>FS3.wav</ShortName>
-					<CachePath>SFX/FS3_57A1798A.wem</CachePath>
+					<CachePath>SFX/BeforeEncounter_E00A5A84.wem</CachePath>
 				</File>
 				<File Id="118301833" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Gate.wav</ShortName>
@@ -198,133 +370,45 @@
 					<ShortName>Rocks.wav</ShortName>
 					<CachePath>SFX/Rocks_818F3B66.wem</CachePath>
 				</File>
-				<File Id="209224562" Language="SFX" Streaming="false" Location="Memory">
-					<ShortName>RatWalk.wav</ShortName>
-					<CachePath>SFX/RatWalk_059A9573.wem</CachePath>
-				</File>
 				<File Id="211183777" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Contain.wav</ShortName>
 					<CachePath>SFX/Contain_518BFCEC.wem</CachePath>
-				</File>
-				<File Id="220336238" Language="SFX" Streaming="false" Location="Memory">
-					<ShortName>Rat2.wav</ShortName>
-					<CachePath>SFX/Rat2_818F3B66.wem</CachePath>
-				</File>
-				<File Id="237375162" Language="SFX" Streaming="false" Location="Memory">
-					<ShortName>RatWalk.wav</ShortName>
-					<CachePath>SFX/RatWalk_3F96EDB6.wem</CachePath>
-				</File>
-				<File Id="240030660" Language="SFX" Streaming="false" Location="Memory">
-					<ShortName>LinwoodWalk3.wav</ShortName>
-					<CachePath>SFX/LinwoodWalk3_818F3B66.wem</CachePath>
 				</File>
 				<File Id="255512674" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>GeneralAmbience2.wav</ShortName>
 					<CachePath>SFX/GeneralAmbience2_818F3B66.wem</CachePath>
 				</File>
-				<File Id="279446680" Language="SFX" Streaming="false" Location="Memory">
-					<ShortName>Splash2.wav</ShortName>
-					<CachePath>SFX/Splash2_818F3B66.wem</CachePath>
-				</File>
 				<File Id="283228224" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>CHASE.wav</ShortName>
 					<CachePath>SFX/CHASE_818F3B66.wem</CachePath>
-				</File>
-				<File Id="329411520" Language="SFX" Streaming="false" Location="Memory">
-					<ShortName>LinwoodWalk4.wav</ShortName>
-					<CachePath>SFX/LinwoodWalk4_818F3B66.wem</CachePath>
 				</File>
 				<File Id="329823285" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Whale.wav</ShortName>
 					<CachePath>SFX/Whale_03D88D39.wem</CachePath>
 				</File>
-				<File Id="378869427" Language="SFX" Streaming="false" Location="Memory">
-					<ShortName>Rat34.wav</ShortName>
-					<CachePath>SFX/Rat34_818F3B66.wem</CachePath>
-				</File>
 				<File Id="392923746" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Paper.wav</ShortName>
 					<CachePath>SFX/Paper_818F3B66.wem</CachePath>
-				</File>
-				<File Id="432474786" Language="SFX" Streaming="false" Location="Memory">
-					<ShortName>Drag.wav</ShortName>
-					<CachePath>SFX/Drag_FD86A6DC.wem</CachePath>
-				</File>
-				<File Id="497860259" Language="SFX" Streaming="false" Location="Memory">
-					<ShortName>FS2.wav</ShortName>
-					<CachePath>SFX/FS2_90E88873.wem</CachePath>
-				</File>
-				<File Id="636040739" Language="SFX" Streaming="false" Location="Memory">
-					<ShortName>Splat.wav</ShortName>
-					<CachePath>SFX/Splat_97A4DAE6.wem</CachePath>
 				</File>
 				<File Id="653906428" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>GeneralAmbience.wav</ShortName>
 					<CachePath>SFX/GeneralAmbience_5C9831CC.wem</CachePath>
 				</File>
-				<File Id="682298366" Language="SFX" Streaming="false" Location="Memory">
-					<ShortName>Squeak1.wav</ShortName>
-					<CachePath>SFX/Squeak1_818F3B66.wem</CachePath>
-				</File>
-				<File Id="720736340" Language="SFX" Streaming="false" Location="Memory">
-					<ShortName>FS4.wav</ShortName>
-					<CachePath>SFX/FS4_367C4DDA.wem</CachePath>
-				</File>
 				<File Id="758588823" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Muffle.wav</ShortName>
 					<CachePath>SFX/Muffle_924B9938.wem</CachePath>
-				</File>
-				<File Id="780068149" Language="SFX" Streaming="false" Location="Memory">
-					<ShortName>RatWalk.wav</ShortName>
-					<CachePath>SFX/RatWalk_E91227F2.wem</CachePath>
-				</File>
-				<File Id="798476568" Language="SFX" Streaming="false" Location="Memory">
-					<ShortName>Squeak2.wav</ShortName>
-					<CachePath>SFX/Squeak2_818F3B66.wem</CachePath>
-				</File>
-				<File Id="804822220" Language="SFX" Streaming="false" Location="Memory">
-					<ShortName>BeforeEncounter.wav</ShortName>
-					<CachePath>SFX/BeforeEncounter_818F3B66.wem</CachePath>
 				</File>
 				<File Id="805956132" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Bed.wav</ShortName>
 					<CachePath>SFX/Bed_818F3B66.wem</CachePath>
 				</File>
-				<File Id="881292332" Language="SFX" Streaming="false" Location="Memory">
-					<ShortName>Squeak3.wav</ShortName>
-					<CachePath>SFX/Squeak3_818F3B66.wem</CachePath>
-				</File>
 				<File Id="889771441" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>FOOT.wav</ShortName>
 					<CachePath>SFX/FOOT_36CF13D4.wem</CachePath>
 				</File>
-				<File Id="902469787" Language="SFX" Streaming="false" Location="Memory">
-					<ShortName>LinwoodWalk1.wav</ShortName>
-					<CachePath>SFX/LinwoodWalk1_818F3B66.wem</CachePath>
-				</File>
-				<File Id="925896026" Language="SFX" Streaming="false" Location="Memory">
-					<ShortName>LinwoodWalk2.wav</ShortName>
-					<CachePath>SFX/LinwoodWalk2_818F3B66.wem</CachePath>
-				</File>
-				<File Id="926262678" Language="SFX" Streaming="false" Location="Memory">
-					<ShortName>Rat4.wav</ShortName>
-					<CachePath>SFX/Rat4_818F3B66.wem</CachePath>
-				</File>
-				<File Id="939133334" Language="SFX" Streaming="false" Location="Memory">
-					<ShortName>Stomp.wav</ShortName>
-					<CachePath>SFX/Stomp_818F3B66.wem</CachePath>
-				</File>
-				<File Id="962155194" Language="SFX" Streaming="false" Location="Memory">
-					<ShortName>Death.wav</ShortName>
-					<CachePath>SFX/Death_818F3B66.wem</CachePath>
-				</File>
 				<File Id="984205393" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>shecansavemesheisanangel.wav</ShortName>
 					<CachePath>SFX/shecansavemesheisanangel_FBC78EF0.wem</CachePath>
-				</File>
-				<File Id="992153646" Language="SFX" Streaming="false" Location="Memory">
-					<ShortName>FS1.wav</ShortName>
-					<CachePath>SFX/FS1_F2862A00.wem</CachePath>
 				</File>
 				<File Id="1052871034" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Blood.wav</ShortName>
@@ -332,7 +416,7 @@
 				</File>
 				<File Id="1063358398" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>CHASE.wav</ShortName>
-					<CachePath>SFX/CHASE_63A5BCD0.wem</CachePath>
+					<CachePath>SFX/CHASE_24B0C804.wem</CachePath>
 				</File>
 			</Media>
 			<Plugins>
@@ -341,9 +425,7 @@
 					<Plugin Id="316895671" Name="Silence" LibName="Wwise Silence" LibId="6619138"/>
 					<Plugin Id="424562999" Name="Silence" LibName="Wwise Silence" LibId="6619138"/>
 					<Plugin Id="584843543" Name="Silence" LibName="Wwise Silence" LibId="6619138"/>
-					<Plugin Id="759195188" Name="Silence" LibName="Wwise Silence" LibId="6619138"/>
 					<Plugin Id="794302455" Name="RoomVerb (Custom)" LibName="Wwise RoomVerb" LibId="7733251"/>
-					<Plugin Id="1072150631" Name="Silence" LibName="Wwise Silence" LibId="6619138"/>
 				</Custom>
 				<ShareSets>
 					<Plugin Id="701863527" Name="Inside_My_Head" LibName="Wwise RoomVerb" LibId="7733251"/>
@@ -351,38 +433,15 @@
 				</ShareSets>
 			</Plugins>
 			<Events>
-				<Event Id="58138747" Name="Active">
-					<MediaRefs>
-						<MediaRef Id="804822220"/>
-						<MediaRef Id="1052871034"/>
-					</MediaRefs>
-				</Event>
 				<Event Id="85412153" Name="Ambience">
 					<MediaRefs>
 						<MediaRef Id="255512674"/>
 						<MediaRef Id="653906428"/>
 					</MediaRefs>
 				</Event>
-				<Event Id="1645043423" Name="Bite">
-					<MediaRefs>
-						<MediaRef Id="40301477"/>
-						<MediaRef Id="220336238"/>
-						<MediaRef Id="378869427"/>
-					</MediaRefs>
-					<PluginRefs>
-						<Custom>
-							<PluginRef Id="759195188"/>
-						</Custom>
-					</PluginRefs>
-				</Event>
 				<Event Id="3934470635" Name="Blood">
 					<MediaRefs>
 						<MediaRef Id="1052871034"/>
-					</MediaRefs>
-				</Event>
-				<Event Id="417490929" Name="Chase">
-					<MediaRefs>
-						<MediaRef Id="283228224"/>
 					</MediaRefs>
 				</Event>
 				<Event Id="2201105581" Name="Credits">
@@ -391,18 +450,6 @@
 						<MediaRef Id="283228224"/>
 						<MediaRef Id="1063358398"/>
 					</MediaRefs>
-				</Event>
-				<Event Id="779278001" Name="Death">
-					<MediaRefs>
-						<MediaRef Id="95847362"/>
-						<MediaRef Id="636040739"/>
-						<MediaRef Id="962155194"/>
-					</MediaRefs>
-					<PluginRefs>
-						<Custom>
-							<PluginRef Id="1072150631"/>
-						</Custom>
-					</PluginRefs>
 				</Event>
 				<Event Id="1125500713" Name="Intro">
 					<MediaRefs>
@@ -450,33 +497,6 @@
 						<MediaRef Id="392923746"/>
 					</MediaRefs>
 				</Event>
-				<Event Id="2003927601" Name="Puddle">
-					<MediaRefs>
-						<MediaRef Id="47047321"/>
-						<MediaRef Id="279446680"/>
-					</MediaRefs>
-				</Event>
-				<Event Id="3924734864" Name="RatDeath">
-					<MediaRefs>
-						<MediaRef Id="636040739"/>
-						<MediaRef Id="926262678"/>
-					</MediaRefs>
-				</Event>
-				<Event Id="1690196772" Name="RatSqueak">
-					<MediaRefs>
-						<MediaRef Id="682298366"/>
-						<MediaRef Id="798476568"/>
-						<MediaRef Id="881292332"/>
-					</MediaRefs>
-				</Event>
-				<Event Id="3790712335" Name="RatWalking">
-					<MediaRefs>
-						<MediaRef Id="85423154"/>
-						<MediaRef Id="209224562"/>
-						<MediaRef Id="237375162"/>
-						<MediaRef Id="780068149"/>
-					</MediaRefs>
-				</Event>
 				<Event Id="2691985942" Name="RocksCrumbling">
 					<MediaRefs>
 						<MediaRef Id="191555762"/>
@@ -487,9 +507,46 @@
 						</Custom>
 					</PluginRefs>
 				</Event>
-				<Event Id="1166633136" Name="Stomp">
+			</Events>
+		</SoundBank>
+		<SoundBank Id="3513125265" Type="User" Language="SFX" Hash="{1518BA0A-54A4-D574-A399-F6FFDF9EA772}">
+			<ShortName>Linwood</ShortName>
+			<Path>3513125265.bnk</Path>
+			<Media>
+				<File Id="240030660" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>LinwoodWalk3.wav</ShortName>
+					<CachePath>SFX/LinwoodWalk3_818F3B66.wem</CachePath>
+				</File>
+				<File Id="329411520" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>LinwoodWalk4.wav</ShortName>
+					<CachePath>SFX/LinwoodWalk4_818F3B66.wem</CachePath>
+				</File>
+				<File Id="432474786" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Drag.wav</ShortName>
+					<CachePath>SFX/Drag_FD86A6DC.wem</CachePath>
+				</File>
+				<File Id="804822220" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>BeforeEncounter.wav</ShortName>
+					<CachePath>SFX/BeforeEncounter_818F3B66.wem</CachePath>
+				</File>
+				<File Id="902469787" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>LinwoodWalk1.wav</ShortName>
+					<CachePath>SFX/LinwoodWalk1_818F3B66.wem</CachePath>
+				</File>
+				<File Id="925896026" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>LinwoodWalk2.wav</ShortName>
+					<CachePath>SFX/LinwoodWalk2_818F3B66.wem</CachePath>
+				</File>
+				<File Id="1052871034" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Blood.wav</ShortName>
+					<CachePath>SFX/Blood_FBC78EF0.wem</CachePath>
+				</File>
+			</Media>
+			<Events>
+				<Event Id="58138747" Name="Active">
 					<MediaRefs>
-						<MediaRef Id="939133334"/>
+						<MediaRef Id="804822220"/>
+						<MediaRef Id="1052871034"/>
 					</MediaRefs>
 				</Event>
 				<Event Id="2108779966" Name="Walk">
@@ -501,16 +558,8 @@
 						<MediaRef Id="925896026"/>
 					</MediaRefs>
 				</Event>
-				<Event Id="340271938" Name="Walking">
-					<MediaRefs>
-						<MediaRef Id="99596555"/>
-						<MediaRef Id="497860259"/>
-						<MediaRef Id="720736340"/>
-						<MediaRef Id="992153646"/>
-					</MediaRefs>
-				</Event>
 			</Events>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{1B581C37-5316-9DAF-B77B-E11F6146069B}</FileHash>
+	<FileHash>{9E682136-45AE-7C59-181F-71BA9A450827}</FileHash>
 </SoundBanksInfo>
