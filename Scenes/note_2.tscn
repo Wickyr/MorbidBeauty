@@ -1,4 +1,4 @@
-[gd_scene load_steps=8 format=3 uid="uid://bnlyeyaviqviu"]
+[gd_scene load_steps=8 format=3 uid="uid://d4mkdjloex4rs"]
 
 [ext_resource type="Texture2D" uid="uid://bdvp7nfrppolh" path="res://Graphics/Env/page_1.png" id="1_j8qmb"]
 [ext_resource type="FontFile" uid="uid://cw7l6e5x6thbe" path="res://Graphics/UI/myscars_tt.ttf" id="2_hm32q"]
@@ -35,17 +35,13 @@ theme_override_colors/font_color = Color(0.214589, 2.99313e-07, 0.0100157, 1)
 theme_override_fonts/font = ExtResource("2_hm32q")
 theme_override_font_sizes/font_size = 40
 text = "Entry 2, From Linwood
-	They've accepted me! I’m part of it,
- they even gave me my own uniform. 
-It’s not the nicest but I’m
- not complaining. 
-Pretty soon they're gonna 
-show me one of their experiments. 
-I can't wait to see what may lead 
-to saving the surface. 
-
-
-"
+	They have welcomed 
+me into their fold! I am now
+ one among them,
+ even bestowed with a 
+uniform, plain though it may be.
+ Yet, their countenances are grave; 
+not a smile graces their lips. "
 
 [node name="Table_1" parent="." instance=ExtResource("3_mv14r")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0527745, -1.02935, -0.42)

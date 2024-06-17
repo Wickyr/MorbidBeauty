@@ -35,22 +35,23 @@ theme_override_colors/font_color = Color(0.214589, 2.99313e-07, 0.0100157, 1)
 theme_override_fonts/font = ExtResource("2_r8mmf")
 theme_override_font_sizes/font_size = 40
 text = "Entry 1, Linwood
-	Finally made it here, took a hell of a 
-lot longer than I’d like to admit. 
-But I’m here, and the cult is real! 
-They're talking about possibly letting 
-me join, and showing me some of 
-their experiments. Maybe I can help
- make something, or someone that
- can retake the surface. 
-Everyone back 
-home can live in peace. I’ll finally 
-have a 
-sunny day, I’ll finally see the 
-leaves of a tree blowing 
-in the cool wind. 
-Can you imagine that?
-
+	At long last, I have arrived, 
+though I am loath to confess 
+the duration of my journey. Yet 
+here I stand, and lo,
+ the cultivators are real! They 
+speak now of granting me
+ admittance and revealing to me their 
+experiments. Perhaps I might lend 
+my hand in crafting something—or 
+someone—capable of reclaiming 
+the surface. Then all those dear to 
+me might dwell in
+ peace, and I may at
+ last behold a sunny day, see the
+ leaves of a tree stirred by a
+ cool breeze.
+ Can you conceive of such a marvel?
 "
 
 [node name="Table_1" parent="." instance=ExtResource("3_8x8rh")]
@@ -78,8 +79,7 @@ light_energy = 1.454
 omni_range = 2.41223
 
 [node name="Label3D" type="Label3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.837454, 0.676549, 0.286752)
-visible = false
+transform = Transform3D(3.38605, 0, 0, 0, 3.38605, 0, 0, 0, 3.38605, 0.837454, 0.676549, 0.286752)
 text = "Press e"
 font = ExtResource("6_cewpm")
 font_size = 40
