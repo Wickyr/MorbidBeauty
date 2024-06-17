@@ -14,7 +14,7 @@ tracks/0/path = NodePath("Title:modulate")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/keys = {
-"times": PackedFloat32Array(10, 13, 20.1),
+"times": PackedFloat32Array(11, 20, 29),
 "transitions": PackedFloat32Array(1, 1, 1),
 "update": 0,
 "values": [Color(1, 1, 1, 0), Color(1, 1, 1, 0.843137), Color(1, 1, 1, 0)]
@@ -22,38 +22,26 @@ tracks/0/keys = {
 tracks/1/type = "value"
 tracks/1/imported = false
 tracks/1/enabled = true
-tracks/1/path = NodePath("Label:self_modulate")
+tracks/1/path = NodePath("End:End")
 tracks/1/interp = 1
 tracks/1/loop_wrap = true
 tracks/1/keys = {
-"times": PackedFloat32Array(0, 2, 4.5),
-"transitions": PackedFloat32Array(1, 1, 1),
-"update": 0,
-"values": [Color(1, 1, 1, 0), Color(1, 1, 1, 1), Color(1, 1, 1, 0)]
-}
-tracks/2/type = "value"
-tracks/2/imported = false
-tracks/2/enabled = true
-tracks/2/path = NodePath("Label2:self_modulate")
-tracks/2/interp = 1
-tracks/2/loop_wrap = true
-tracks/2/keys = {
-"times": PackedFloat32Array(4.8, 6.5, 9.5),
-"transitions": PackedFloat32Array(1, 1, 1),
-"update": 0,
-"values": [Color(1, 1, 1, 0), Color(1, 1, 1, 1), Color(1, 1, 1, 0)]
-}
-tracks/3/type = "value"
-tracks/3/imported = false
-tracks/3/enabled = true
-tracks/3/path = NodePath("End:End")
-tracks/3/interp = 1
-tracks/3/loop_wrap = true
-tracks/3/keys = {
 "times": PackedFloat32Array(40),
 "transitions": PackedFloat32Array(1),
 "update": 1,
 "values": [true]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("Title2:self_modulate")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0, 5, 10.2),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 0), Color(1, 1, 1, 1), Color(1, 1, 1, 0)]
 }
 
 [sub_resource type="Animation" id="Animation_tbyqg"]
@@ -73,19 +61,19 @@ tracks/0/keys = {
 tracks/1/type = "value"
 tracks/1/imported = false
 tracks/1/enabled = true
-tracks/1/path = NodePath("Label:self_modulate")
+tracks/1/path = NodePath("End:End")
 tracks/1/interp = 1
 tracks/1/loop_wrap = true
 tracks/1/keys = {
 "times": PackedFloat32Array(0),
 "transitions": PackedFloat32Array(1),
-"update": 0,
-"values": [Color(1, 1, 1, 0)]
+"update": 1,
+"values": [false]
 }
 tracks/2/type = "value"
 tracks/2/imported = false
 tracks/2/enabled = true
-tracks/2/path = NodePath("Label2:self_modulate")
+tracks/2/path = NodePath("Title2:self_modulate")
 tracks/2/interp = 1
 tracks/2/loop_wrap = true
 tracks/2/keys = {
@@ -93,18 +81,6 @@ tracks/2/keys = {
 "transitions": PackedFloat32Array(1),
 "update": 0,
 "values": [Color(1, 1, 1, 0)]
-}
-tracks/3/type = "value"
-tracks/3/imported = false
-tracks/3/enabled = true
-tracks/3/path = NodePath("End:End")
-tracks/3/interp = 1
-tracks/3/loop_wrap = true
-tracks/3/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 1,
-"values": [false]
 }
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_14udl"]
@@ -127,27 +103,6 @@ libraries = {
 }
 autoplay = "Intro"
 
-[node name="Label" type="Label" parent="."]
-self_modulate = Color(1, 1, 1, 0)
-offset_left = -5.0
-offset_top = 192.0
-offset_right = 1184.0
-offset_bottom = 435.0
-theme_override_fonts/font = ExtResource("2_mt5vj")
-theme_override_font_sizes/font_size = 110
-text = "                   A game by
-  haruspexending, Jammmz, and Wickyr"
-
-[node name="Label2" type="Label" parent="."]
-self_modulate = Color(1, 1, 1, 0)
-offset_left = 49.0
-offset_top = 264.0
-offset_right = 1238.0
-offset_bottom = 507.0
-theme_override_fonts/font = ExtResource("2_mt5vj")
-theme_override_font_sizes/font_size = 110
-text = "Made for The Secret Cult Horror Jam"
-
 [node name="Title" type="Label" parent="."]
 modulate = Color(1, 1, 1, 0)
 offset_left = 347.0
@@ -158,6 +113,17 @@ theme_override_colors/font_color = Color(0.694118, 0, 0.137255, 1)
 theme_override_fonts/font = ExtResource("2_mt5vj")
 theme_override_font_sizes/font_size = 120
 text = "Morbid Beauty"
+
+[node name="Title2" type="Label" parent="."]
+self_modulate = Color(1, 1, 1, 0)
+offset_left = 234.0
+offset_top = 263.0
+offset_right = 949.0
+offset_bottom = 383.0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_fonts/font = ExtResource("2_mt5vj")
+theme_override_font_sizes/font_size = 120
+text = "By the Lost Developers"
 
 [node name="End" type="Node2D" parent="."]
 script = ExtResource("3_rmtgd")
